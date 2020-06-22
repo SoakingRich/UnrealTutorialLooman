@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CoOpGame.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{33AE7B5B-855F-4303-9C8C-57FC3DA42C76}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CoOpGame.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CoOpGameEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{C56C7DBE-E103-4967-974E-96C8778216FF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CoOpGame">
+      <UniqueIdentifier>{B671A9E5-CB6D-44D3-B510-9E2C7FF71D13}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CoOpGame\CoOpGame.Build.cs">
+      <Filter>Source\CoOpGame</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CoOpGame\CoOpGame.cpp">
+      <Filter>Source\CoOpGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CoOpGame\CoOpGame.h">
+      <Filter>Source\CoOpGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CoOpGame\CoOpGameGameModeBase.cpp">
+      <Filter>Source\CoOpGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CoOpGame\CoOpGameGameModeBase.h">
+      <Filter>Source\CoOpGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CoOpGame\TestActor.cpp">
+      <Filter>Source\CoOpGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CoOpGame\TestActor.h">
+      <Filter>Source\CoOpGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\CoOpGame\Public">
+      <UniqueIdentifier>{f73232c5-2fa2-4326-af91-26f6711cc208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\CoOpGame\Private">
+      <UniqueIdentifier>{7847237b-f98f-4042-bf87-dba89b004060}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CoOpGame\Public\SCharacter.h">
+      <Filter>Source\CoOpGame\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CoOpGame\Private\SCharacter.cpp">
+      <Filter>Source\CoOpGame\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CoOpGame",
+			"Path": "C:\\UnrealTutorialLooman\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CoOpGameEditor",
+			"Path": "C:\\UnrealTutorialLooman\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
