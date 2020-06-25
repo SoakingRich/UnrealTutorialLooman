@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoOpGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{4EA2E772-8E73-47DF-BD34-8C5B5575FFAE}</UniqueIdentifier>
+      <UniqueIdentifier>{6B9A52A4-78D8-4E07-B4D2-9AAECA0F66A7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoOpGame.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CCEC0625-5BCF-4C89-BF9C-3CB7904A0512}</UniqueIdentifier>
+      <UniqueIdentifier>{449943E3-0548-4FE6-8971-6F836673DB1E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\CoOpGame">
-      <UniqueIdentifier>{0FE1C891-20FE-4DB4-A266-E5B24DA5062C}</UniqueIdentifier>
+      <UniqueIdentifier>{C8AD808C-B6A1-47F9-8B58-99200503EAB9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoOpGame\CoOpGame.Build.cs">
       <Filter>Source\CoOpGame</Filter>
@@ -48,15 +51,21 @@
       <Filter>Source\CoOpGame</Filter>
     </ClInclude>
     <Filter Include="Source\CoOpGame\Private">
-      <UniqueIdentifier>{2095DFD2-18D3-4A25-800E-EFEB9AC4F263}</UniqueIdentifier>
+      <UniqueIdentifier>{8318407A-1BF5-4920-B295-D1572A87D9A7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\CoOpGame\Private\SCharacter.cpp">
       <Filter>Source\CoOpGame\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CoOpGame\Private\SWeapon.cpp">
+      <Filter>Source\CoOpGame\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\CoOpGame\Public">
-      <UniqueIdentifier>{3ED50283-AD2D-4962-A4FF-59A95B3AD234}</UniqueIdentifier>
+      <UniqueIdentifier>{C0178B14-959B-4E32-A436-EC59E7756AB7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\CoOpGame\Public\SCharacter.h">
+      <Filter>Source\CoOpGame\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoOpGame\Public\SWeapon.h">
       <Filter>Source\CoOpGame\Public</Filter>
     </ClInclude>
   </ItemGroup>
