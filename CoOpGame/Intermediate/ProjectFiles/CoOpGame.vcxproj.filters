@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoOpGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{33AE7B5B-855F-4303-9C8C-57FC3DA42C76}</UniqueIdentifier>
+      <UniqueIdentifier>{4EA2E772-8E73-47DF-BD34-8C5B5575FFAE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoOpGame.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C56C7DBE-E103-4967-974E-96C8778216FF}</UniqueIdentifier>
+      <UniqueIdentifier>{CCEC0625-5BCF-4C89-BF9C-3CB7904A0512}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CoOpGame">
-      <UniqueIdentifier>{B671A9E5-CB6D-44D3-B510-9E2C7FF71D13}</UniqueIdentifier>
+      <UniqueIdentifier>{0FE1C891-20FE-4DB4-A266-E5B24DA5062C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoOpGame\CoOpGame.Build.cs">
       <Filter>Source\CoOpGame</Filter>
@@ -47,23 +47,17 @@
     <ClInclude Include="..\..\Source\CoOpGame\TestActor.h">
       <Filter>Source\CoOpGame</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source\CoOpGame\Public">
-      <UniqueIdentifier>{f73232c5-2fa2-4326-af91-26f6711cc208}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\CoOpGame\Private">
-      <UniqueIdentifier>{7847237b-f98f-4042-bf87-dba89b004060}</UniqueIdentifier>
+      <UniqueIdentifier>{2095DFD2-18D3-4A25-800E-EFEB9AC4F263}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\CoOpGame\Public\SCharacter.h">
-      <Filter>Source\CoOpGame\Public</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\Source\CoOpGame\Private\SCharacter.cpp">
       <Filter>Source\CoOpGame\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\CoOpGame\Public">
+      <UniqueIdentifier>{3ED50283-AD2D-4962-A4FF-59A95B3AD234}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CoOpGame\Public\SCharacter.h">
+      <Filter>Source\CoOpGame\Public</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
