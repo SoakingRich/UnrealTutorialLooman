@@ -7,6 +7,9 @@
 #include "GameFramework/NavMovementComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/PawnMovementComponent.h"
+#include "SWeapon.h"
+#include <Components/CapsuleComponent.h>
+#include "CoOpGame\CoOpGame.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -21,9 +24,13 @@ ASCharacter::ASCharacter()
 	
 
 	GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
+	GetCapsuleComponent()->SetCollisionResponseToChannel(COLLISION_WEAPON, ECR_Ignore);
+
 
 	CameraComp = CreateAbstractDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
 	CameraComp->SetupAttachment(SpringArmComp);
+
+	WeaponAttachSocketName = "WeaponSocket";
 
 
 }
@@ -32,7 +39,32 @@ ASCharacter::ASCharacter()
 void ASCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+
+	DefaultFOV = CameraComp->FieldOfView;
+
+	if (ZoomedFOV == 0)
+	{
+		ZoomedFOV = DefaultFOV / 1.5f;
+	}
+
+	if (ZoomInterpSpeed == 0)
+	{
+		ZoomInterpSpeed = 20;
+	}
+
+	//spawn weapon
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+	CurrentWeapon = GetWorld()->SpawnActor<ASWeapon>(StartWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator, SpawnParams);
+		if (CurrentWeapon)
+		{
+			CurrentWeapon->SetOwner(this);
+			CurrentWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponAttachSocketName);
+		}
+
 }
 
 void ASCharacter::MoveForward(float Value)
@@ -56,10 +88,60 @@ void ASCharacter::EndCrouch()
 	UnCrouch();
 }
 
+void ASCharacter::BeginZoom()
+{
+	bShouldZoom = true;
+}
+
+void ASCharacter::EndZoom()
+{
+	bShouldZoom = false;
+}
+
+void ASCharacter::StartFire()
+{
+	
+	if (CurrentWeapon)
+	{
+		CurrentWeapon->StartFire();
+	}
+}
+
+void ASCharacter::StopFire()
+{
+	if (CurrentWeapon)
+	{
+		CurrentWeapon->StopFire();
+	}
+}
+
+
+
+void ASCharacter::OnHealthChanged(USHealthComp* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
+{
+	if (Health <= 0.0f && !bDied)
+	{
+		//die
+
+		GetMovementComponent()->StopMovementImmediately();
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	}
+
+
+}
+
 // Called every frame
 void ASCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+
+	float TargetFOV = bShouldZoom ? ZoomedFOV : DefaultFOV;
+	float NewFOV = FMath::FInterpTo(CameraComp->FieldOfView, TargetFOV, DeltaTime, ZoomInterpSpeed);
+
+
+	CameraComp->SetFieldOfView(NewFOV);
 
 }
 
@@ -78,6 +160,12 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+
+	PlayerInputComponent->BindAction("Zoom", IE_Pressed, this, &ASCharacter::BeginZoom);
+	PlayerInputComponent->BindAction("Zoom", IE_Released, this, &ASCharacter::EndZoom);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ASCharacter::StartFire);
+	PlayerInputComponent->BindAction("Fire", IE_Released, this, &ASCharacter::StopFire);
 
 
 

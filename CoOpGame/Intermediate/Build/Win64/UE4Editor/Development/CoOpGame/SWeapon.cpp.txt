@@ -20,3 +20,10 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particl
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\PhysicalMaterials/PhysicalMaterial.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Vehicles/TireType.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TireType.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\PhysicsEngine/PhysicsSettingsEnums.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PhysicsSettingsEnums.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PhysicalMaterial.generated.h
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\CoOpGame.h

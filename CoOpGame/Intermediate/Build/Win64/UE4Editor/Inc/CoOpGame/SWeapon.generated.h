@@ -16,12 +16,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CoOpGame_Source_CoOpGame_Public_SWeapon_h_16_SPARSE_DATA
 #define CoOpGame_Source_CoOpGame_Public_SWeapon_h_16_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execFire);
+	DECLARE_FUNCTION(execStopFire); \
+	DECLARE_FUNCTION(execStartFire);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SWeapon_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execFire);
+	DECLARE_FUNCTION(execStopFire); \
+	DECLARE_FUNCTION(execStartFire);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SWeapon_h_16_INCLASS_NO_PURE_DECLS \
@@ -72,8 +74,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASWeapon); \
 	FORCEINLINE static uint32 __PPO__MuzzleSocketName() { return STRUCT_OFFSET(ASWeapon, MuzzleSocketName); } \
 	FORCEINLINE static uint32 __PPO__TracerTargetName() { return STRUCT_OFFSET(ASWeapon, TracerTargetName); } \
 	FORCEINLINE static uint32 __PPO__MuzzleEffect() { return STRUCT_OFFSET(ASWeapon, MuzzleEffect); } \
-	FORCEINLINE static uint32 __PPO__ImpactEffect() { return STRUCT_OFFSET(ASWeapon, ImpactEffect); } \
-	FORCEINLINE static uint32 __PPO__TracerEffect() { return STRUCT_OFFSET(ASWeapon, TracerEffect); }
+	FORCEINLINE static uint32 __PPO__DefaultImpactEffect() { return STRUCT_OFFSET(ASWeapon, DefaultImpactEffect); } \
+	FORCEINLINE static uint32 __PPO__FleshImpactEffect() { return STRUCT_OFFSET(ASWeapon, FleshImpactEffect); } \
+	FORCEINLINE static uint32 __PPO__TracerEffect() { return STRUCT_OFFSET(ASWeapon, TracerEffect); } \
+	FORCEINLINE static uint32 __PPO__FireCamShake() { return STRUCT_OFFSET(ASWeapon, FireCamShake); } \
+	FORCEINLINE static uint32 __PPO__BaseDamage() { return STRUCT_OFFSET(ASWeapon, BaseDamage); } \
+	FORCEINLINE static uint32 __PPO__RateOfFire() { return STRUCT_OFFSET(ASWeapon, RateOfFire); }
 
 
 #define CoOpGame_Source_CoOpGame_Public_SWeapon_h_13_PROLOG

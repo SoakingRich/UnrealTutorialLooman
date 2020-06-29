@@ -6,12 +6,19 @@
 #include <Kismet/GameplayStatics.h>
 #include <Particles/ParticleSystem.h>
 #include <Particles/ParticleSystemComponent.h>
+#include <PhysicalMaterials/PhysicalMaterial.h>
+#include <Engine/EngineTypes.h>
+#include "CoOpGame\CoOpGame.h"
+#include <TimerManager.h>
+
+static int32 DebugWeaponDrawing = 0;
+FAutoConsoleVariableRef CVARDebugWeaponDrawing(TEXT("COOP.DebugWeapons"), DebugWeaponDrawing, TEXT("Draw Debug Lines For Weapons"), ECVF_Cheat);
+
 
 // Sets default values
 ASWeapon::ASWeapon()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+
 
 	MeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComp"));
 	RootComponent = MeshComp;
@@ -19,15 +26,19 @@ ASWeapon::ASWeapon()
 	MuzzleSocketName = "MuzzleSocket";
 	TracerTargetName = "BeamEnd";
 
+	BaseDamage = 20;
+	RateOfFire = 600;
 	
 
 }
-// Called when the game starts or when spawned
+
 void ASWeapon::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	TimeBetweenShots = 60 / RateOfFire;
 }
+
 
 void ASWeapon::Fire()
 {
@@ -48,55 +59,112 @@ void ASWeapon::Fire()
 		QueryParams.AddIgnoredActor(MyOwner);
 		QueryParams.AddIgnoredActor(this);
 		QueryParams.bTraceComplex = true;
+		QueryParams.bReturnPhysicalMaterial = true;
 
 		// particle 'Target" parameter
 		FVector TracerEndPoint = TraceEnd;
 
 		FHitResult Hit;
-		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, ECC_Visibility, QueryParams))
+		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, COLLISION_WEAPON, QueryParams))
 		{
 			//blocking hit! do damage
 
 			AActor* HitActor = Hit.GetActor();
 
-			UGameplayStatics::ApplyPointDamage(HitActor, 20.0f, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
+			EPhysicalSurface surf = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
 
-			if (ImpactEffect)
+			float ActualDamage = BaseDamage;
+			if (surf == SURFACE_FLESHVULNERABLE)
+			{
+				ActualDamage *= 4.0f;
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Times Equals"));
+
+			}
+
+
+			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
+
+			
+
+
+			UParticleSystem* SelectedEffect = nullptr;
+
+			switch (surf)
+			{
+			case SURFACE_FLESHDEFAULT:
+			case SURFACE_FLESHVULNERABLE:
+				SelectedEffect = FleshImpactEffect;
+				break;
+
+			default:
+				SelectedEffect = DefaultImpactEffect;
+				break;
+			}
+
+			if (SelectedEffect)
 			{
 
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), SelectedEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
 			}
+
 
 			TracerEndPoint = Hit.ImpactPoint;
 		}
 
-		DrawDebugLine(GetWorld(), EyeLocation, TraceEnd, FColor::White, false, 1.0f, 0, 1.0f);
-
-		if (MuzzleEffect)
+		if (DebugWeaponDrawing > 0)
 		{
-
-			UGameplayStatics::SpawnEmitterAttached(MuzzleEffect, MeshComp, MuzzleSocketName);
+			DrawDebugLine(GetWorld(), EyeLocation, TraceEnd, FColor::White, false, 1.0f, 0, 1.0f);
 		}
 
+		PlayFireEffects(TracerEndPoint);
 
-		if (TracerEffect)
-		{
-			FVector MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocketName);
-			UParticleSystemComponent* TracerComp = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TracerEffect, MuzzleLocation);
-			if (TracerComp)
-			{
-				TracerComp->SetVectorParameter(TracerTargetName, TracerEndPoint);
-			}
-		}
-
+		LastFireTime = GetWorld()->TimeSeconds;
+		
 	}
 
 }
 
-// Called every frame
-void ASWeapon::Tick(float DeltaTime)
+void ASWeapon::StartFire()
 {
-	Super::Tick(DeltaTime);
+	float FirstDelay = FMath::Max(LastFireTime + TimeBetweenShots - GetWorld()->TimeSeconds, 0.0f);
+
+	GetWorldTimerManager().SetTimer(TimerHandle_TimeBetweenShots, this, &ASWeapon::Fire, TimeBetweenShots, true, FirstDelay);
+	
+}
+
+void ASWeapon::StopFire()
+{
+	GetWorldTimerManager().ClearTimer(TimerHandle_TimeBetweenShots);
+}
+
+
+
+void ASWeapon::PlayFireEffects(FVector TracerEndPoint)
+{
+	if (MuzzleEffect)
+	{
+
+		UGameplayStatics::SpawnEmitterAttached(MuzzleEffect, MeshComp, MuzzleSocketName);
+	}
+
+
+	if (TracerEffect)
+	{
+		FVector MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocketName);
+		UParticleSystemComponent* TracerComp = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TracerEffect, MuzzleLocation);
+		if (TracerComp)
+		{
+			TracerComp->SetVectorParameter(TracerTargetName, TracerEndPoint);
+		}
+	}
+
+	APawn* MyOwner = Cast<APawn>(GetOwner());
+	if (MyOwner)
+	{
+		APlayerController* AC = Cast<APlayerController>(MyOwner->GetController());
+		AC->ClientPlayCameraShake(FireCamShake);
+	}
+
 
 }
 
