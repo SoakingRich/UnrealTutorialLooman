@@ -10,6 +10,7 @@
 #include "SWeapon.h"
 #include <Components/CapsuleComponent.h>
 #include "CoOpGame\CoOpGame.h"
+#include "Components/SHealthComp.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -32,7 +33,9 @@ ASCharacter::ASCharacter()
 
 	WeaponAttachSocketName = "WeaponSocket";
 
-
+	HealthComp = CreateDefaultSubobject<USHealthComp>(TEXT("MyHealthComp"));
+	
+	
 }
 
 // Called when the game starts or when spawned
@@ -40,7 +43,9 @@ void ASCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+	
 
 	DefaultFOV = CameraComp->FieldOfView;
 
@@ -117,19 +122,29 @@ void ASCharacter::StopFire()
 
 
 
-void ASCharacter::OnHealthChanged(USHealthComp* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
+void ASCharacter::OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
-	if (Health <= 0.0f && !bDied)
+	if (Health <= 0.0f && !bIDied)
 	{
 		//die
+		bIDied = true;
 
 		GetMovementComponent()->StopMovementImmediately();
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
+
+		DetachFromControllerPendingDestroy();
+
+		SetLifeSpan(10.0f);
 	}
 
 
 }
+
+
+
+
+
 
 // Called every frame
 void ASCharacter::Tick(float DeltaTime)

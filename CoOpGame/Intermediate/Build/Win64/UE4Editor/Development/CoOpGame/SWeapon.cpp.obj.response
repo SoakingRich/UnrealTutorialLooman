@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Private
+/I F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -231,9 +231,9 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame
-/I C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source
-/I C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public
+/I F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame
+/I F:\UnrealTutorialLooman\CoOpGame\Source
+/I F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -257,18 +257,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+/I "F:\Visual Studio\VC\Tools\MSVC\14.26.28801\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Private\SWeapon.cpp"
-/FI"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h"
-/Fo"C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\SWeapon.cpp.obj"
+/FI"F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\CoOpGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Private\SWeapon.cpp"
+/FI"F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h"
+/Fo"F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\SWeapon.cpp.obj"
 /TP
 /GR-
 /W4

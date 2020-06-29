@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\UnrealTutorialLooman\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGame\\CoOpGame.Build.cs",
-		"C:\\UnrealTutorialLooman\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGame.Target.cs",
-		"C:\\UnrealTutorialLooman\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGameEditor.Target.cs"
+		"F:\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGame\\CoOpGame.Build.cs",
+		"F:\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGame.Target.cs",
+		"F:\\UnrealTutorialLooman\\CoOpGame\\Source\\CoOpGameEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.1"
 }

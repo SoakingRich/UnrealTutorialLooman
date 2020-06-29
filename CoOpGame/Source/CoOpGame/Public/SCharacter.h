@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Components/SHealthComp.h"
+#include "GameFramework/DamageType.h"
+#include "GameFramework/Controller.h"
+#include "GameFramework/Actor.h"
 #include "SCharacter.generated.h"
 
 class USpringArmComponent;
@@ -39,7 +43,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USpringArmComponent* SpringArmComp;
 
-
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USHealthComp* HealthComp;
 
 	bool bShouldZoom;
@@ -71,14 +75,18 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly, Category = "Player")
 	FName WeaponAttachSocketName;
-
-	UFUNCTION()
-	void OnHealthChanged(USHealthComp* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
-
 	//pawn died previously
-	bool bDied;
+
 
 public:	
+
+	UFUNCTION()
+	void OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
+
+	UPROPERTY(BlueprintReadOnly, Category = "Player")
+	bool bIDied;
+	
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

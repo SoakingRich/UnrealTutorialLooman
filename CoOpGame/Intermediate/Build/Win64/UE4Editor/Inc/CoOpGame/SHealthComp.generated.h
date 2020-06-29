@@ -93,11 +93,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USHealthComp); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(USHealthComp)
 
 
-#define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(USHealthComp, Health); } \
-	FORCEINLINE static uint32 __PPO__DefaultHealth() { return STRUCT_OFFSET(USHealthComp, DefaultHealth); }
-
-
+#define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_PRIVATE_PROPERTY_OFFSET
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_12_PROLOG
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

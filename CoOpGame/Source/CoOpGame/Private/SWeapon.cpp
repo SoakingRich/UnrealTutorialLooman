@@ -162,7 +162,10 @@ void ASWeapon::PlayFireEffects(FVector TracerEndPoint)
 	if (MyOwner)
 	{
 		APlayerController* AC = Cast<APlayerController>(MyOwner->GetController());
-		AC->ClientPlayCameraShake(FireCamShake);
+		if (AC)
+		{
+			AC->ClientPlayCameraShake(FireCamShake);
+		}
 	}
 
 
