@@ -8,25 +8,25 @@
 #include "GameFramework/DamageType.h"
 #include "Kismet/GameplayStatics.h"
 #include "PhysicsEngine/RadialForceComponent.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values
 ASExplosiveBarrel::ASExplosiveBarrel()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
-	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
-	RootComponent = StaticMesh;
-
-	StaticMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	StaticMesh->SetCollisionResponseToAllChannels(ECR_Ignore);
-	StaticMesh->SetCollisionResponseToChannel(COLLISION_WEAPON, ECR_Block);
-	
+ 	
 
 	HealthComp = CreateDefaultSubobject<USHealthComp>(TEXT("BarrelHealthComp"));
 
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
+	StaticMesh->SetSimulatePhysics(true);
+	StaticMesh->SetCollisionObjectType(ECC_PhysicsBody);
+	RootComponent = StaticMesh;
+
 	RadialForceComp = CreateDefaultSubobject<URadialForceComponent>(TEXT("RadialForce"));
 	RadialForceComp->SetupAttachment(RootComponent);
+	RadialForceComp->Radius = 250;
+	RadialForceComp->bImpulseVelChange = true;
+	RadialForceComp->bAutoActivate = false;
 	RadialForceComp->bIgnoreOwningActor = true;
 	
 	
@@ -52,18 +52,28 @@ void ASExplosiveBarrel::Tick(float DeltaTime)
 
 void ASExplosiveBarrel::OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
+	if (bExploded) return;
 
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("got damage"));
+
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("got damage"));
+
 
 	if (HealthComp->Health <= 0)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("EXPLODED111"));
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("EXPLODED111"));
+
+		StaticMesh->AddImpulse(GetActorUpVector(), NAME_None, true);
 
 		TArray<AActor*> IgnoredActors;
 		IgnoredActors.Add(DamageCauser);
-		UGameplayStatics::ApplyRadialDamage(GetWorld(), DamageAmount, GetActorLocation(), Radius, myDamageType, IgnoredActors);
+		UGameplayStatics::ApplyRadialDamage(GetWorld(), DamageAmount, GetActorLocation(), Radius * 2, myDamageType, IgnoredActors);
+		DrawDebugSphere(GetWorld(), GetActorLocation(), Radius * 2, 16, FColor::Yellow, false, 5.0f);
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), myParticles, GetActorLocation());
+		StaticMesh->SetMaterial(0, ExplodedMaterial);
+		
 		RadialForceComp->FireImpulse();
+
+		bExploded = true;
 		
 	}
 }

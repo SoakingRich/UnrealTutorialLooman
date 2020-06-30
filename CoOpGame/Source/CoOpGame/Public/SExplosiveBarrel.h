@@ -11,6 +11,7 @@ class UStaticMeshComponent;
 class USHealthComp;
 class UParticleSystem;
 class URadialForceComponent;
+class UMaterialInterface;
 
 UCLASS()
 class COOPGAME_API ASExplosiveBarrel : public AActor
@@ -39,6 +40,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 	URadialForceComponent* RadialForceComp;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Materials")
+		UMaterialInterface* ExplodedMaterial;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision")
 	float Radius;
 
@@ -47,6 +51,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision")
 		float ForceAmount;
+
+	bool bExploded;
 
 protected:
 	// Called when the game starts or when spawned

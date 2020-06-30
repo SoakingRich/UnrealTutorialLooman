@@ -26,3 +26,4 @@ F:\UnrealEngine\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeCom
 F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\CoOpGame.h
+F:\UnrealEngine\UE_4.25\Engine\Source\Runtime\Engine\Public\Net/UnrealNetwork.h

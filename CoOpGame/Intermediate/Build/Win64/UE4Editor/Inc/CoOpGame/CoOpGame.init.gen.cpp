@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeCoOpGame_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD5E7017D,
-				0x0EC1716A,
+				0xC1528232,
+				0x0DFDEE84,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

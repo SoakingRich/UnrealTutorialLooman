@@ -10,6 +10,7 @@
 #include <Engine/EngineTypes.h>
 #include "CoOpGame\CoOpGame.h"
 #include <TimerManager.h>
+#include "Net/UnrealNetwork.h"
 
 static int32 DebugWeaponDrawing = 0;
 FAutoConsoleVariableRef CVARDebugWeaponDrawing(TEXT("COOP.DebugWeapons"), DebugWeaponDrawing, TEXT("Draw Debug Lines For Weapons"), ECVF_Cheat);
@@ -29,6 +30,10 @@ ASWeapon::ASWeapon()
 	BaseDamage = 20;
 	RateOfFire = 600;
 	
+	SetReplicates(true);
+
+	NetUpdateFrequency = 66.0f;
+	MinNetUpdateFrequency = 33.0f;
 
 }
 
@@ -41,7 +46,14 @@ void ASWeapon::BeginPlay()
 
 
 void ASWeapon::Fire()
+
 {
+	if (!HasAuthority())
+	{
+		ServerFire();
+		
+	}
+
 	// trace world from pawn eyes to cross hair location
 
 	AActor* MyOwner = GetOwner();
@@ -64,6 +76,8 @@ void ASWeapon::Fire()
 		// particle 'Target" parameter
 		FVector TracerEndPoint = TraceEnd;
 
+		EPhysicalSurface surf = SurfaceType_Default;
+
 		FHitResult Hit;
 		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, COLLISION_WEAPON, QueryParams))
 		{
@@ -71,7 +85,7 @@ void ASWeapon::Fire()
 
 			AActor* HitActor = Hit.GetActor();
 
-			EPhysicalSurface surf = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
+			surf = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
 
 			float ActualDamage = BaseDamage;
 			if (surf == SURFACE_FLESHVULNERABLE)
@@ -84,28 +98,10 @@ void ASWeapon::Fire()
 
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
 
+			PlayFireEffects(TracerEndPoint);
+			PlayImpactEffects(surf, Hit.ImpactPoint);
+
 			
-
-
-			UParticleSystem* SelectedEffect = nullptr;
-
-			switch (surf)
-			{
-			case SURFACE_FLESHDEFAULT:
-			case SURFACE_FLESHVULNERABLE:
-				SelectedEffect = FleshImpactEffect;
-				break;
-
-			default:
-				SelectedEffect = DefaultImpactEffect;
-				break;
-			}
-
-			if (SelectedEffect)
-			{
-
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), SelectedEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
-			}
 
 
 			TracerEndPoint = Hit.ImpactPoint;
@@ -116,12 +112,63 @@ void ASWeapon::Fire()
 			DrawDebugLine(GetWorld(), EyeLocation, TraceEnd, FColor::White, false, 1.0f, 0, 1.0f);
 		}
 
-		PlayFireEffects(TracerEndPoint);
+		
+
+		if (HasAuthority())
+		{
+			//this being updated will repUsing fireeffects to clients
+			HitScanTrace.TraceTo = TracerEndPoint;
+			HitScanTrace.SurfaceTypeRep = surf;
+		}
 
 		LastFireTime = GetWorld()->TimeSeconds;
 		
 	}
 
+}
+
+void ASWeapon::OnRep_HitScanTrace()
+{
+	//play cosmetic fx
+	PlayFireEffects(HitScanTrace.TraceTo);
+	PlayImpactEffects(HitScanTrace.SurfaceTypeRep, HitScanTrace.TraceTo);
+}
+
+void ASWeapon::PlayImpactEffects(EPhysicalSurface SurfaceType, FVector ImpactPoint)
+{
+	UParticleSystem* SelectedEffect = nullptr;
+
+	switch (SurfaceType)
+	{
+	case SURFACE_FLESHDEFAULT:
+	case SURFACE_FLESHVULNERABLE:
+		SelectedEffect = FleshImpactEffect;
+		break;
+
+	default:
+		SelectedEffect = DefaultImpactEffect;
+		break;
+	}
+
+	if (SelectedEffect)
+	{
+		FVector MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocketName);
+
+		FVector ShotDireciton = ImpactPoint - MuzzleLocation;
+		ShotDireciton.Normalize();
+
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), SelectedEffect, ImpactPoint, ShotDireciton.Rotation());
+	}
+}
+
+void ASWeapon::ServerFire_Implementation()
+{
+	Fire();
+}
+
+bool ASWeapon::ServerFire_Validate()
+{
+	return true;
 }
 
 void ASWeapon::StartFire()
@@ -143,7 +190,7 @@ void ASWeapon::PlayFireEffects(FVector TracerEndPoint)
 {
 	if (MuzzleEffect)
 	{
-
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Spawn muzzle effect"));
 		UGameplayStatics::SpawnEmitterAttached(MuzzleEffect, MeshComp, MuzzleSocketName);
 	}
 
@@ -169,5 +216,16 @@ void ASWeapon::PlayFireEffects(FVector TracerEndPoint)
 	}
 
 
+
+
 }
+
+void ASWeapon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME_CONDITION(ASWeapon, HitScanTrace, COND_SkipOwner);
+}
+
+
 

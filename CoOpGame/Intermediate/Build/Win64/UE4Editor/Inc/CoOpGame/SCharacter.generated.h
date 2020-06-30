@@ -38,7 +38,14 @@ private: \
 	friend struct Z_Construct_UClass_ASCharacter_Statics; \
 public: \
 	DECLARE_CLASS(ASCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASCharacter)
+	DECLARE_SERIALIZER(ASCharacter) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		CurrentWeapon=NETFIELD_REP_START, \
+		NETFIELD_REP_END=CurrentWeapon	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SCharacter_h_21_INCLASS \
@@ -47,7 +54,14 @@ private: \
 	friend struct Z_Construct_UClass_ASCharacter_Statics; \
 public: \
 	DECLARE_CLASS(ASCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASCharacter)
+	DECLARE_SERIALIZER(ASCharacter) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		CurrentWeapon=NETFIELD_REP_START, \
+		NETFIELD_REP_END=CurrentWeapon	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SCharacter_h_21_STANDARD_CONSTRUCTORS \

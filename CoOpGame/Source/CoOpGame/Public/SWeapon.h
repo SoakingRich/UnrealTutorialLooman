@@ -10,6 +10,23 @@ class USkeletalMeshComponent;
 class UDamageType;
 class UParticleSystem;
 
+
+//contains info of a single sweapon line trace
+USTRUCT()
+struct FHitscanTrace
+{
+	GENERATED_BODY()
+
+public: 
+
+	UPROPERTY()
+	TEnumAsByte<EPhysicalSurface> SurfaceTypeRep;
+	UPROPERTY()
+		FVector_NetQuantize  TraceTo;
+		UPROPERTY()
+		FVector_NetQuantize  TraceFrom;
+};
+
 UCLASS()
 class COOPGAME_API ASWeapon : public AActor
 {
@@ -69,7 +86,18 @@ protected:
 		//derived from rate of fire
 		float TimeBetweenShots;
 
+		UPROPERTY(ReplicatedUsing=OnRep_HitScanTrace)
+		FHitscanTrace HitScanTrace;
+
+		UFUNCTION()
+		void OnRep_HitScanTrace();
+
+		void PlayImpactEffects(EPhysicalSurface SurfaceType, FVector ImpactPoint);
+
 public:	
+
+	UFUNCTION(Server, Reliable, WithValidation)
+		void ServerFire();
 	
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
