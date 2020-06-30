@@ -57,7 +57,14 @@ private: \
 	friend struct Z_Construct_UClass_USHealthComp_Statics; \
 public: \
 	DECLARE_CLASS(USHealthComp, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(USHealthComp)
+	DECLARE_SERIALIZER(USHealthComp) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		Health=NETFIELD_REP_START, \
+		NETFIELD_REP_END=Health	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_INCLASS \
@@ -66,7 +73,14 @@ private: \
 	friend struct Z_Construct_UClass_USHealthComp_Statics; \
 public: \
 	DECLARE_CLASS(USHealthComp, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(USHealthComp)
+	DECLARE_SERIALIZER(USHealthComp) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		Health=NETFIELD_REP_START, \
+		NETFIELD_REP_END=Health	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_STANDARD_CONSTRUCTORS \

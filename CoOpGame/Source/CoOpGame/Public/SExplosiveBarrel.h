@@ -52,7 +52,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision")
 		float ForceAmount;
 
+	UPROPERTY(ReplicatedUsing=OnRep_Explode)
 	bool bExploded;
+
+	UFUNCTION()
+		void OnRep_Explode();
+
+	void Explode();
 
 protected:
 	// Called when the game starts or when spawned
@@ -65,6 +71,7 @@ public:
 	UFUNCTION()
 		void OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
+	
 	
 
 };

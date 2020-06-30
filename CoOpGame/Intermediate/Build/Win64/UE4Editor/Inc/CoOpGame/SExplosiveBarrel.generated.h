@@ -20,12 +20,14 @@ class AActor;
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_SPARSE_DATA
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnHealthChanged);
+	DECLARE_FUNCTION(execOnHealthChanged); \
+	DECLARE_FUNCTION(execOnRep_Explode);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnHealthChanged);
+	DECLARE_FUNCTION(execOnHealthChanged); \
+	DECLARE_FUNCTION(execOnRep_Explode);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_INCLASS_NO_PURE_DECLS \
@@ -34,7 +36,14 @@ private: \
 	friend struct Z_Construct_UClass_ASExplosiveBarrel_Statics; \
 public: \
 	DECLARE_CLASS(ASExplosiveBarrel, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASExplosiveBarrel)
+	DECLARE_SERIALIZER(ASExplosiveBarrel) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bExploded=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bExploded	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_INCLASS \
@@ -43,7 +52,14 @@ private: \
 	friend struct Z_Construct_UClass_ASExplosiveBarrel_Statics; \
 public: \
 	DECLARE_CLASS(ASExplosiveBarrel, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASExplosiveBarrel)
+	DECLARE_SERIALIZER(ASExplosiveBarrel) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bExploded=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bExploded	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SExplosiveBarrel_h_19_STANDARD_CONSTRUCTORS \

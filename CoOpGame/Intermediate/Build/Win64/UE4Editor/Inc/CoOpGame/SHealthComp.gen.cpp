@@ -228,7 +228,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		{ "ModuleRelativePath", "Public/Components/SHealthComp.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USHealthComp_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USHealthComp, Health), METADATA_PARAMS(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USHealthComp_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0010000000000034, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USHealthComp, Health), METADATA_PARAMS(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USHealthComp_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USHealthComp_Statics::NewProp_OnHealthChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USHealthComp_Statics::NewProp_DefaultHealth,
@@ -261,12 +261,22 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USHealthComp, 817523363);
+	IMPLEMENT_CLASS(USHealthComp, 2814803941);
 	template<> COOPGAME_API UClass* StaticClass<USHealthComp>()
 	{
 		return USHealthComp::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_USHealthComp(Z_Construct_UClass_USHealthComp, &USHealthComp::StaticClass, TEXT("/Script/CoOpGame"), TEXT("USHealthComp"), false, nullptr, nullptr, nullptr);
+
+	void USHealthComp::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
+	{
+		static const FName Name_Health(TEXT("Health"));
+
+		const bool bIsValid = true
+			&& Name_Health == ClassReps[(int32)ENetFields_Private::Health].Property->GetFName();
+
+		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in USHealthComp"));
+	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(USHealthComp);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER

@@ -9,6 +9,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "PhysicsEngine/RadialForceComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 ASExplosiveBarrel::ASExplosiveBarrel()
@@ -28,6 +29,8 @@ ASExplosiveBarrel::ASExplosiveBarrel()
 	RadialForceComp->bImpulseVelChange = true;
 	RadialForceComp->bAutoActivate = false;
 	RadialForceComp->bIgnoreOwningActor = true;
+	
+	SetReplicates(true);
 	
 	
 
@@ -54,28 +57,46 @@ void ASExplosiveBarrel::OnHealthChanged(USHealthComp* HealthCompo, float Health,
 {
 	if (bExploded) return;
 
-
-	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("got damage"));
+	if (!HasAuthority())
+	{
+		return;
+	}
 
 
 	if (HealthComp->Health <= 0)
 	{
-		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("EXPLODED111"));
-
-		StaticMesh->AddImpulse(GetActorUpVector(), NAME_None, true);
+		bExploded = true;
+		Explode();
 
 		TArray<AActor*> IgnoredActors;
-		IgnoredActors.Add(DamageCauser);
+		IgnoredActors.Add(nullptr);
 		UGameplayStatics::ApplyRadialDamage(GetWorld(), DamageAmount, GetActorLocation(), Radius * 2, myDamageType, IgnoredActors);
 		DrawDebugSphere(GetWorld(), GetActorLocation(), Radius * 2, 16, FColor::Yellow, false, 5.0f);
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), myParticles, GetActorLocation());
-		StaticMesh->SetMaterial(0, ExplodedMaterial);
-		
-		RadialForceComp->FireImpulse();
-
-		bExploded = true;
 		
 	}
 }
 
+void ASExplosiveBarrel::OnRep_Explode()
+{
+	Explode();
+}
+
+void ASExplosiveBarrel::Explode()
+{
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
+
+	StaticMesh->AddImpulse(GetActorUpVector(), NAME_None, true);
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), myParticles, GetActorLocation());
+	StaticMesh->SetMaterial(0, ExplodedMaterial);
+
+	//RadialForceComp->FireImpulse();
+
+}
+
+void ASExplosiveBarrel::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ASExplosiveBarrel, bExploded);
+}
 

@@ -35,8 +35,8 @@ ASCharacter::ASCharacter()
 
 	WeaponAttachSocketName = "WeaponSocket";
 
-	HealthComp = CreateDefaultSubobject<USHealthComp>(TEXT("MyHealthComp"));
-	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+	newHealthComp = CreateDefaultSubobject<USHealthComp>(TEXT("MyHealthComp"));
+	newHealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 	
 	
 }
@@ -206,5 +206,6 @@ void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon);
+	DOREPLIFETIME(ASCharacter, bIDied);
 }
 

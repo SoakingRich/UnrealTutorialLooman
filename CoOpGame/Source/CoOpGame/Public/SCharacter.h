@@ -44,7 +44,7 @@ protected:
 	USpringArmComponent* SpringArmComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	USHealthComp* HealthComp;
+	USHealthComp* newHealthComp;
 
 	bool bShouldZoom;
 
@@ -83,7 +83,7 @@ public:
 	UFUNCTION()
 	void OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
-	UPROPERTY(BlueprintReadOnly, Category = "Player")
+	UPROPERTY(Replicated, BlueprintReadOnly, Category = "Player")
 	bool bIDied;
 	
 
