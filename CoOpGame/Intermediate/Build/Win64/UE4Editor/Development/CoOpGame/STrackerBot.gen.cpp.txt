@@ -1,0 +1,5 @@
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame/Public/STrackerBot.h
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\STrackerBot.generated.h

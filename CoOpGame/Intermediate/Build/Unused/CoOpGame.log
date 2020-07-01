@@ -1,11 +1,12 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (F:\UnrealTutorialLooman).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\UnrealTutorialLooman\UnrealTutorialLooman).
   Building CoOpGameEditor...
-  Using Visual Studio 2019 14.26.28805 toolchain (F:\Visual Studio\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 3 actions with 6 processes...
-    [1/3] UE4Editor-CoOpGame.lib
-       Creating library F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.lib and object F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.exp
-    [2/3] UE4Editor-CoOpGame.dll
-       Creating library F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.suppressed.lib and object F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.suppressed.exp
-    [3/3] CoOpGameEditor.target
-  Total time in Parallel executor: 0.59 seconds
-  Total execution time: 1.10 seconds
+  Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 8 processes...
+    [1/4] STrackerBot.cpp
+    [2/4] UE4Editor-CoOpGame.lib
+       Creating library C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.lib and object C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.exp
+    [3/4] UE4Editor-CoOpGame.dll
+       Creating library C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.suppressed.lib and object C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame.suppressed.exp
+    [4/4] CoOpGameEditor.target
+  Total time in Parallel executor: 4.23 seconds
+  Total execution time: 5.05 seconds
