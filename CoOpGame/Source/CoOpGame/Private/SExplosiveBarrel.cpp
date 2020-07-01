@@ -72,6 +72,10 @@ void ASExplosiveBarrel::OnHealthChanged(USHealthComp* HealthCompo, float Health,
 		IgnoredActors.Add(nullptr);
 		UGameplayStatics::ApplyRadialDamage(GetWorld(), DamageAmount, GetActorLocation(), Radius * 2, myDamageType, IgnoredActors);
 		DrawDebugSphere(GetWorld(), GetActorLocation(), Radius * 2, 16, FColor::Yellow, false, 5.0f);
+		RadialForceComp->FireImpulse();
+
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("fire impulse"));
+
 		
 	}
 }
@@ -85,7 +89,7 @@ void ASExplosiveBarrel::Explode()
 {
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
 
-	StaticMesh->AddImpulse(GetActorUpVector(), NAME_None, true);
+	//StaticMesh->AddImpulse(GetActorUpVector(), NAME_None, true);
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), myParticles, GetActorLocation());
 	StaticMesh->SetMaterial(0, ExplodedMaterial);
 
