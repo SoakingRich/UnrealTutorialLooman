@@ -130,6 +130,8 @@ void ASCharacter::StopFire()
 
 void ASCharacter::OnHealthChanged(USHealthComp* HealthCompo, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
+	if (!HasAuthority()) return;
+
 	if (Health <= 0.0f && !bIDied)
 	{
 		//die

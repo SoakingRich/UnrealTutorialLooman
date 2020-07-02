@@ -89,6 +89,8 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "TrackerBot")
 	USoundCue* explodeSound;
+
+	
 		
 
 

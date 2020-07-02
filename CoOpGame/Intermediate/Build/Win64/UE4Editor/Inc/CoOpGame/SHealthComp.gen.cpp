@@ -90,6 +90,14 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(USHealthComp::execOnRep_Health)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_OldHealth);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnRep_Health(Z_Param_OldHealth);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(USHealthComp::execHandleTakeAnyDamage)
 	{
 		P_GET_OBJECT(AActor,Z_Param_DamagedActor);
@@ -107,6 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		UClass* Class = USHealthComp::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "HandleTakeAnyDamage", &USHealthComp::execHandleTakeAnyDamage },
+			{ "OnRep_Health", &USHealthComp::execOnRep_Health },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -166,6 +175,38 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics
+	{
+		struct SHealthComp_eventOnRep_Health_Parms
+		{
+			float OldHealth;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OldHealth;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::NewProp_OldHealth = { "OldHealth", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SHealthComp_eventOnRep_Health_Parms, OldHealth), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::NewProp_OldHealth,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/SHealthComp.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USHealthComp, nullptr, "OnRep_Health", nullptr, nullptr, sizeof(SHealthComp_eventOnRep_Health_Parms), Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_USHealthComp_OnRep_Health()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USHealthComp_OnRep_Health_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_USHealthComp_NoRegister()
 	{
 		return USHealthComp::StaticClass();
@@ -199,6 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USHealthComp_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_USHealthComp_HandleTakeAnyDamage, "HandleTakeAnyDamage" }, // 3775361712
+		{ &Z_Construct_UFunction_USHealthComp_OnRep_Health, "OnRep_Health" }, // 712967510
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USHealthComp_Statics::Class_MetaDataParams[] = {
@@ -228,7 +270,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		{ "ModuleRelativePath", "Public/Components/SHealthComp.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USHealthComp_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0010000000000034, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USHealthComp, Health), METADATA_PARAMS(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USHealthComp_Statics::NewProp_Health = { "Health", "OnRep_Health", (EPropertyFlags)0x0010000100000034, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USHealthComp, Health), METADATA_PARAMS(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USHealthComp_Statics::NewProp_Health_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USHealthComp_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USHealthComp_Statics::NewProp_OnHealthChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USHealthComp_Statics::NewProp_DefaultHealth,
@@ -261,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USHealthComp, 2814803941);
+	IMPLEMENT_CLASS(USHealthComp, 977700615);
 	template<> COOPGAME_API UClass* StaticClass<USHealthComp>()
 	{
 		return USHealthComp::StaticClass();

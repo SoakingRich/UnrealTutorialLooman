@@ -1,0 +1,3 @@
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SPowerupAcotr.generated.h
