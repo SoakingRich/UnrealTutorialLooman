@@ -9,3 +9,11 @@ F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Sha
 F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
 F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SPowerupAcotr.generated.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SCharacter.h
+F:\UnrealEngine\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+F:\UnrealEngine\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+F:\UnrealEngine\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\Components/SHealthComp.h
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SHealthComp.generated.h
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SCharacter.generated.h

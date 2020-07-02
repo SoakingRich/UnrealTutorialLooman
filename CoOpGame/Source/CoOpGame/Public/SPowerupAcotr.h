@@ -30,12 +30,14 @@ protected:
 	UFUNCTION()
 		void OnTickPowerup();
 
+	UPROPERTY(EditAnywhere, Category = "Powerups")
 	int32 TicksProcessed;
 
 
 public:	
 	// Called every frame
 
+	UFUNCTION()
 	void ActivatePowerup();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "PowerUps")
@@ -46,5 +48,7 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "PowerUps")
 		void OnPowerupTicked();
+
+
 
 };

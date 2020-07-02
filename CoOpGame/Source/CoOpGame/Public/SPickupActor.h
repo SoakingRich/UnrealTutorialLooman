@@ -31,12 +31,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthComponent")
 	UDecalComponent* decalComp;
 
-	UPROPERTY(EditDefaultsOnly, Category = "PickupActor")
+	UPROPERTY(EditInstanceOnly, Category = "PickupActor")
 	TSubclassOf<ASPowerupAcotr> PowerUpClass;
 
 	ASPowerupAcotr* PowerUpInstance;
 
-	UPROPERTY(EditDefaultsOnly, Category = "PickupActor")
+	UPROPERTY(EditInstanceOnly, Category = "PickupActor")
 	float CooldownDuration;
 
 	FTimerHandle TimerHandle_RespawnTimer;

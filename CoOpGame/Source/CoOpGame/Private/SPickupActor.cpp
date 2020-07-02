@@ -5,6 +5,7 @@
 #include "Components/DecalComponent.h"
 #include "Components/SphereComponent.h"
 #include "SPowerupAcotr.h"
+#include "SCharacter.h"
 
 // Sets default values
 ASPickupActor::ASPickupActor()
@@ -20,6 +21,8 @@ ASPickupActor::ASPickupActor()
 	decalComp->SetRelativeRotation(FRotator(0, 90, 0));
 	decalComp->DecalSize = FVector(64, 75, 75);
 	decalComp->SetupAttachment(RootComponent);
+
+	CooldownDuration = 10.0f;
 
 	
 
@@ -52,12 +55,18 @@ void ASPickupActor::NotifyActorBeginOverlap(AActor* OtherActor)
 {
 	Super::NotifyActorBeginOverlap(OtherActor);
 
-	if (PowerUpInstance)
+	ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
+	if (PlayerPawn)
 	{
-		PowerUpInstance->OnActivated();
-		PowerUpInstance = nullptr;
 
-		GetWorldTimerManager().SetTimer(TimerHandle_RespawnTimer, this, &ASPickupActor::Respawn, CooldownDuration);
+		if (PowerUpInstance)
+		{
+			PowerUpInstance->ActivatePowerup();
+
+			PowerUpInstance = nullptr;
+
+			GetWorldTimerManager().SetTimer(TimerHandle_RespawnTimer, this, &ASPickupActor::Respawn, CooldownDuration);
+		}
 	}
 
 }

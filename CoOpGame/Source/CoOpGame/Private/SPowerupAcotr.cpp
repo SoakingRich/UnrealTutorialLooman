@@ -17,12 +17,15 @@ void ASPowerupAcotr::BeginPlay()
 {
 	Super::BeginPlay();
 	
+
+	
 	
 
 }
 
 void ASPowerupAcotr::OnTickPowerup()
 {
+
 	TicksProcessed++;
 
 	OnPowerupTicked();
@@ -37,14 +40,23 @@ void ASPowerupAcotr::OnTickPowerup()
 
 void ASPowerupAcotr::ActivatePowerup()
 {
+	OnActivated();
+
 	if (PowerupInterval > 0.0f)
 	{
-		//GetWorldTimerManager().SetTimer(TimerHandle_PowerupTick, &ASPowerupAcotr::OnTickPowerup, PowerupInterval, true, 0.0f);
-		GetWorldTimerManager().SetTimer(TimerHandle_PowerupTick, this, &ASPowerupAcotr::OnTickPowerup, PowerupInterval, true, 0.0f);
+		GetWorldTimerManager().SetTimer(TimerHandle_PowerupTick, this, &ASPowerupAcotr::OnTickPowerup,PowerupInterval, true);
+	
+
 	}
 	else
 	{
 		OnTickPowerup();
+		
+
 	}
+
 }
+
+
+
 

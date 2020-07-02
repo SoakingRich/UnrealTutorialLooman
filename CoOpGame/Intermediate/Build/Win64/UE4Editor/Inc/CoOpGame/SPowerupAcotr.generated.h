@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_SPARSE_DATA
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execActivatePowerup); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execActivatePowerup); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
@@ -70,7 +72,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASPowerupAcotr); \
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PowerupInterval() { return STRUCT_OFFSET(ASPowerupAcotr, PowerupInterval); } \
-	FORCEINLINE static uint32 __PPO__TotalNumOfTicks() { return STRUCT_OFFSET(ASPowerupAcotr, TotalNumOfTicks); }
+	FORCEINLINE static uint32 __PPO__TotalNumOfTicks() { return STRUCT_OFFSET(ASPowerupAcotr, TotalNumOfTicks); } \
+	FORCEINLINE static uint32 __PPO__TicksProcessed() { return STRUCT_OFFSET(ASPowerupAcotr, TicksProcessed); }
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_9_PROLOG \

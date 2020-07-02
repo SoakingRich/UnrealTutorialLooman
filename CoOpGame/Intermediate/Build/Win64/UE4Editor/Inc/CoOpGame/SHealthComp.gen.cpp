@@ -90,6 +90,14 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(USHealthComp::execHeal)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_HealAmount);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Heal(Z_Param_HealAmount);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(USHealthComp::execOnRep_Health)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_OldHealth);
@@ -115,6 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		UClass* Class = USHealthComp::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "HandleTakeAnyDamage", &USHealthComp::execHandleTakeAnyDamage },
+			{ "Heal", &USHealthComp::execHeal },
 			{ "OnRep_Health", &USHealthComp::execOnRep_Health },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -172,6 +181,39 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USHealthComp_HandleTakeAnyDamage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_USHealthComp_Heal_Statics
+	{
+		struct SHealthComp_eventHeal_Parms
+		{
+			float HealAmount;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HealAmount;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_USHealthComp_Heal_Statics::NewProp_HealAmount = { "HealAmount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SHealthComp_eventHeal_Parms, HealAmount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USHealthComp_Heal_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USHealthComp_Heal_Statics::NewProp_HealAmount,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USHealthComp_Heal_Statics::Function_MetaDataParams[] = {
+		{ "Category", "HealthComp" },
+		{ "ModuleRelativePath", "Public/Components/SHealthComp.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USHealthComp_Heal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USHealthComp, nullptr, "Heal", nullptr, nullptr, sizeof(SHealthComp_eventHeal_Parms), Z_Construct_UFunction_USHealthComp_Heal_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComp_Heal_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USHealthComp_Heal_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComp_Heal_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_USHealthComp_Heal()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USHealthComp_Heal_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -240,6 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USHealthComp_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_USHealthComp_HandleTakeAnyDamage, "HandleTakeAnyDamage" }, // 3775361712
+		{ &Z_Construct_UFunction_USHealthComp_Heal, "Heal" }, // 2625789413
 		{ &Z_Construct_UFunction_USHealthComp_OnRep_Health, "OnRep_Health" }, // 712967510
 	};
 #if WITH_METADATA
@@ -303,7 +346,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USHealthComp, 977700615);
+	IMPLEMENT_CLASS(USHealthComp, 2509668077);
 	template<> COOPGAME_API UClass* StaticClass<USHealthComp>()
 	{
 		return USHealthComp::StaticClass();

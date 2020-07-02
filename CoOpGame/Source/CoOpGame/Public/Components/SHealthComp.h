@@ -42,5 +42,7 @@ public:
 	UFUNCTION()
 	void OnRep_Health(float OldHealth);
 		
+	UFUNCTION(BlueprintCallable, Category = "HealthComp")
+	void Heal(float HealAmount);
 
 };
