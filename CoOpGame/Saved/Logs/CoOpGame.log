@@ -726,3 +726,8 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.07.03-06.45.18:450][779]AssetCheck: New page: Asset Save: multiple assets
 [2020.07.03-06.45.18:450][779]LogContentValidation: Display: Validating World /Game/Maps/MyMap.MyMap
 [2020.07.03-06.45.18:450][779]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/MyMap_BuiltData.MyMap_BuiltData
+[2020.07.03-08.00.26:792][800]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.07.03-08.19.58:784][299]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{98562559-cfba-4cbe-acaf-fd6cfb8d20cc}.
+[2020.07.03-08.19.58:784][299]LogTemp: Resetting audio stream to device id 
+[2020.07.03-08.19.59:003][299]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-08.19.59:003][299]LogAudioMixer: Display: 1: FrontRight
