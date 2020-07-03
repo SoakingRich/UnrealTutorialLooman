@@ -1,2 +1,2 @@
-F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
-F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\CoOpGame.h
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
+C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\CoOpGame.h

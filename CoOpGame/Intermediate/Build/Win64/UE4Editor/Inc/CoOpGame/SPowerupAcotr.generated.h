@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef COOPGAME_SPowerupAcotr_generated_h
 #error "SPowerupAcotr.generated.h already included, missing '#pragma once' in SPowerupAcotr.h"
 #endif
@@ -17,16 +18,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execActivatePowerup); \
+	DECLARE_FUNCTION(execOnRep_PowerupActive); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execActivatePowerup); \
+	DECLARE_FUNCTION(execOnRep_PowerupActive); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
-#define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_EVENT_PARMS
+#define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_EVENT_PARMS \
+	struct SPowerupAcotr_eventOnActivated_Parms \
+	{ \
+		AActor* ActivateFor; \
+	}; \
+	struct SPowerupAcotr_eventOnPowerupStateChanged_Parms \
+	{ \
+		bool bNewPowerupIsActive; \
+	};
+
+
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_CALLBACK_WRAPPERS
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_INCLASS_NO_PURE_DECLS \
 private: \
@@ -34,7 +47,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPowerupAcotr_Statics; \
 public: \
 	DECLARE_CLASS(ASPowerupAcotr, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASPowerupAcotr)
+	DECLARE_SERIALIZER(ASPowerupAcotr) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bPowerUpActive=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bPowerUpActive	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_INCLASS \
@@ -43,7 +63,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPowerupAcotr_Statics; \
 public: \
 	DECLARE_CLASS(ASPowerupAcotr, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoOpGame"), NO_API) \
-	DECLARE_SERIALIZER(ASPowerupAcotr)
+	DECLARE_SERIALIZER(ASPowerupAcotr) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bPowerUpActive=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bPowerUpActive	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_STANDARD_CONSTRUCTORS \
@@ -73,7 +100,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASPowerupAcotr); \
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PowerupInterval() { return STRUCT_OFFSET(ASPowerupAcotr, PowerupInterval); } \
 	FORCEINLINE static uint32 __PPO__TotalNumOfTicks() { return STRUCT_OFFSET(ASPowerupAcotr, TotalNumOfTicks); } \
-	FORCEINLINE static uint32 __PPO__TicksProcessed() { return STRUCT_OFFSET(ASPowerupAcotr, TicksProcessed); }
+	FORCEINLINE static uint32 __PPO__TicksProcessed() { return STRUCT_OFFSET(ASPowerupAcotr, TicksProcessed); } \
+	FORCEINLINE static uint32 __PPO__bPowerUpActive() { return STRUCT_OFFSET(ASPowerupAcotr, bPowerUpActive); }
 
 
 #define CoOpGame_Source_CoOpGame_Public_SPowerupAcotr_h_9_PROLOG \

@@ -1,0 +1,1795 @@
+﻿Log file open, 07/03/20 15:49:11
+LogInit: Display: Running engine for game: CoOpGame
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 2.480465
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.44.0
+LogInit: Build: ++UE4+Release-4.25-CL-13594126
+LogInit: Engine Version: 4.25.1-13594126+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1909) (), CPU: AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx  , GPU: AMD Radeon(TM) RX Vega 10 Graphics
+LogInit: Compiled (64-bit): Jun  2 2020 02:10:36
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.07.03-05.49.12:482][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:483][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.07.03-05.49.12:483][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.07.03-05.49.12:484][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.07.03-05.49.12:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:485][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:492][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.03-05.49.12:492][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.03-05.49.12:493][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.03-05.49.12:494][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.03-05.49.12:495][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.03-05.49.12:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.03-05.49.12:497][  0]LogInit: Selected Device Profile: [Windows]
+[2020.07.03-05.49.12:497][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.07.03-05.49.12:497][  0]LogHAL: Display: Platform has ~ 16 GB [16978178048 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.07.03-05.49.12:497][  0]LogInit: Going up to parent DeviceProfile []
+[2020.07.03-05.49.12:497][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:497][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.03-05.49.12:498][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.03-05.49.12:499][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.03-05.49.12:500][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.03-05.49.12:501][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.03-05.49.12:502][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Scalability.ini]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.03-05.49.12:503][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.07.03-05.49.12:504][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Config/Windows/Engine.ini]
+[2020.07.03-05.49.12:505][  0]LogInit: Computer: LAPTOP-JIFFIFRG
+[2020.07.03-05.49.12:505][  0]LogInit: User: AlexLaptop
+[2020.07.03-05.49.12:505][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.07.03-05.49.12:505][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.07.03-05.49.12:505][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2020.07.03-05.49.12:505][  0]LogMemory: Platform Memory Stats for Windows
+[2020.07.03-05.49.12:505][  0]LogMemory: Process Physical Memory: 118.72 MB used, 118.72 MB peak
+[2020.07.03-05.49.12:505][  0]LogMemory: Process Virtual Memory: 108.24 MB used, 108.24 MB peak
+[2020.07.03-05.49.12:505][  0]LogMemory: Physical Memory: 9107.65 MB used,  7084.00 MB free, 16191.65 MB total
+[2020.07.03-05.49.12:505][  0]LogMemory: Virtual Memory: 5193.73 MB used,  134212536.00 MB free, 134217728.00 MB total
+[2020.07.03-05.49.12:527][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.07.03-05.49.12:803][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.07.03-05.49.12:805][  0]LogInit: Using OS detected language (en-US).
+[2020.07.03-05.49.12:805][  0]LogInit: Using OS detected locale (en-AU).
+[2020.07.03-05.49.12:810][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.07.03-05.49.13:100][  0]LogInit: Setting process to per monitor DPI aware
+[2020.07.03-05.49.13:194][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.07.03-05.49.13:194][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.07.03-05.49.18:832][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2020.07.03-05.49.18:832][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.07.03-05.49.18:833][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.07.03-05.49.18:833][  0]LogD3D11RHI: D3D11 adapters:
+[2020.07.03-05.49.18:977][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2020.07.03-05.49.18:977][  0]LogD3D11RHI:       5980/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.07.03-05.49.19:033][  0]LogD3D11RHI:    1. 'AMD Radeon(TM) RX Vega 10 Graphics' (Feature Level 11_0)
+[2020.07.03-05.49.19:033][  0]LogD3D11RHI:       112/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2020.07.03-05.49.19:041][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.07.03-05.49.19:042][  0]LogD3D11RHI:       0/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.07.03-05.49.19:049][  0]LogD3D11RHI:    3. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.07.03-05.49.19:049][  0]LogD3D11RHI:       0/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.07.03-05.49.19:049][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.07.03-05.49.19:084][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.07.03-05.49.19:084][  0]LogD3D11RHI:     GPU DeviceId: 0x1f11 (for the marketing name, search the web for "GPU Device Id")
+[2020.07.03-05.49.19:084][  0]LogWindows: EnumDisplayDevices:
+[2020.07.03-05.49.19:084][  0]LogWindows:    0. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:1 D:1)
+[2020.07.03-05.49.19:085][  0]LogWindows:    1. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:0 D:0)
+[2020.07.03-05.49.19:086][  0]LogWindows:    2. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:0 D:0)
+[2020.07.03-05.49.19:087][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2020.07.03-05.49.19:087][  0]LogWindows:    4. 'DisplayLink USB Device' (P:0 D:1)
+[2020.07.03-05.49.19:087][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter 
+[2020.07.03-05.49.19:087][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2020.07.03-05.49.19:087][  0]LogD3D11RHI:   Driver Version: 441.41 (internal:26.21.14.4141, unified:441.41)
+[2020.07.03-05.49.19:088][  0]LogD3D11RHI:      Driver Date: 11-20-2019
+[2020.07.03-05.49.19:088][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2020.07.03-05.49.19:179][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.07.03-05.49.19:185][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2020.07.03-05.49.19:185][  0]LogD3D11RHI: Async texture creation enabled
+[2020.07.03-05.49.19:185][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.07.03-05.49.19:222][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.07.03-05.49.19:690][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.07.03-05.49.19:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.07.03-05.49.19:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.07.03-05.49.19:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.07.03-05.49.19:790][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.07.03-05.49.19:790][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.07.03-05.49.19:810][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.07.03-05.49.19:832][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.07.03-05.49.19:853][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.07.03-05.49.19:870][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.07.03-05.49.19:888][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.07.03-05.49.19:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.07.03-05.49.19:924][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.07.03-05.49.19:971][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.07.03-05.49.19:971][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.07.03-05.49.19:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.07.03-05.49.19:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.07.03-05.49.20:017][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.07.03-05.49.20:037][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.07.03-05.49.20:061][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.07.03-05.49.20:081][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.07.03-05.49.20:081][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.07.03-05.49.20:112][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.07.03-05.49.20:268][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Intermediate/Shaders/WorkingDirectory/23856/).
+[2020.07.03-05.49.20:268][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/AlexLaptop/AppData/Local/Temp/UnrealShaderWorkingDir/63E9F33F4339C2D160F60AB0066E2DDE/'.
+[2020.07.03-05.49.20:269][  0]LogXGEController: Cleaning working directory: C:/Users/AlexLaptop/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.07.03-05.49.20:269][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.07.03-05.49.20:270][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.07.03-05.49.20:270][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.07.03-05.49.21:277][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: Loaded boot cache 0.08s 79MB C:/Users/AlexLaptop/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/AlexLaptop/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.07.03-05.49.21:356][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.07.03-05.49.21:372][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.07.03-05.49.21:372][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.07.03-05.49.21:372][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.07.03-05.49.21:378][  0]LogDerivedDataCache: Using Local data cache path C:/Users/AlexLaptop/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.07.03-05.49.21:378][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.07.03-05.49.21:378][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.07.03-05.49.21:438][  0]LogSlate: Using FreeType 2.10.0
+[2020.07.03-05.49.21:439][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.07.03-05.49.21:473][  0]LogAssetRegistry: FAssetRegistry took 0.0073 seconds to start up
+[2020.07.03-05.49.21:845][  0]LogInit: Selected Device Profile: [Windows]
+[2020.07.03-05.49.22:060][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.07.03-05.49.22:060][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.07.03-05.49.22:060][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.07.03-05.49.22:060][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.07.03-05.49.22:060][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.07.03-05.49.22:090][  0]LogNetVersion: CoOpGame 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 2766024207)
+[2020.07.03-05.49.22:702][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000276B9A5C340), frame # 0
+[2020.07.03-05.49.22:702][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276B99B91C0), frame # 0
+[2020.07.03-05.49.22:704][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276B9A01E00), frame # 0
+[2020.07.03-05.49.22:803][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.089631 seconds
+[2020.07.03-05.49.22:814][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.07.03-05.49.22:814][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.07.03-05.49.22:814][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.07.03-05.49.23:553][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.07.03-05.49.23:564][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.07.03-05.49.23:805][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.23:805][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.23:812][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.23:820][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.23:835][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.24:395][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.07.03-05.49.24:447][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.03-05.49.24:447][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.03-05.49.24:551][  0]LogOcInput: OculusInput pre-init called
+[2020.07.03-05.49.24:910][  0]LogEngine: Initializing Engine...
+[2020.07.03-05.49.25:036][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2020.07.03-05.49.25:036][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.07.03-05.49.25:037][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.07.03-05.49.25:207][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.07.03-05.49.25:224][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.07.03-05.49.25:224][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276BBCA2000), frame # 0
+[2020.07.03-05.49.25:224][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276BBCE1800), frame # 0
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-05.49.25:241][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-05.49.25:241][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-05.49.25:242][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-05.49.25:242][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-05.49.25:270][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-05.49.25:270][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-05.49.25:355][  0]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-05.49.25:356][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-05.49.25:362][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-05.49.25:363][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-05.49.25:365][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-05.49.25:367][  0]LogInit: FAudioDevice initialized.
+[2020.07.03-05.49.25:368][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.07.03-05.49.25:444][  0]LogDerivedDataCache: Saved boot cache 0.07s 79MB C:/Users/AlexLaptop/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.07.03-05.49.25:456][  0]LogInit: Texture streaming: Enabled
+[2020.07.03-05.49.25:493][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.07.03-05.49.25:493][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={D2445A03-408F-928F-166C-599EAF1290E3}
+[2020.07.03-05.49.25:493][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.07.03-05.49.25:496][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.07.03-05.49.25:600][  0]LogInit: Transaction tracking system initialized
+[2020.07.03-05.49.25:650][  0]BlueprintLog: New page: Editor Load
+[2020.07.03-05.49.25:808][  0]LocalizationService: Localization service is disabled
+[2020.07.03-05.49.26:103][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.07.03-05.49.26:103][  0]LogCook: Display: Mobile HDR setting 1
+[2020.07.03-05.49.26:391][  0]LogFileCache: Scanning file cache for directory 'C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/' took 0.01s
+[2020.07.03-05.49.26:660][  0]SourceControl: Source control is disabled
+[2020.07.03-05.49.26:660][  0]LogUnrealEdMisc: Loading editor; pre map load, took 19.380
+[2020.07.03-05.49.26:661][  0]Cmd: MAP LOAD FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.07.03-05.49.26:662][  0]LightingResults: New page: Lighting Build
+[2020.07.03-05.49.26:663][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.49.26:663][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.49.26:664][  0]MapCheck: New page: Map Check
+[2020.07.03-05.49.26:664][  0]LightingResults: New page: Lighting Build
+[2020.07.03-05.49.26:673][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000276BBCA2000), frame # 0
+[2020.07.03-05.49.26:673][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000276BBCE1800), frame # 0
+[2020.07.03-05.49.26:675][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2020.07.03-05.49.27:325][  0]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-05.49.27:325][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276AC3C8600), frame # 0
+[2020.07.03-05.49.27:325][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276AC42E840), frame # 0
+[2020.07.03-05.49.27:346][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.07.03-05.49.27:362][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2020.07.03-05.49.27:363][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.07.03-05.49.27:363][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.283ms to complete.
+[2020.07.03-05.49.27:364][  0]LogFileHelpers: Loading map 'MyMap' took 0.702
+[2020.07.03-05.49.27:367][  0]LogUnrealEdMisc: Total Editor Startup Time, took 20.087
+[2020.07.03-05.49.27:534][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.49.27:544][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.49.27:557][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.49.27:566][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.49.27:581][  0]LogCollectionManager: Loaded 0 collections in 0.002773 seconds
+[2020.07.03-05.49.27:616][  0]LogFileCache: Scanning file cache for directory 'C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Collections/' took 0.00s
+[2020.07.03-05.49.27:616][  0]LogFileCache: Scanning file cache for directory 'C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Developers/AlexLaptop/Collections/' took 0.01s
+[2020.07.03-05.49.27:616][  0]LogFileCache: Scanning file cache for directory 'C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Collections/' took 0.01s
+[2020.07.03-05.49.27:617][  0]LogContentBrowser: Native class hierarchy populated in 0.0149 seconds. Added 3436 classes and 825 folders.
+[2020.07.03-05.49.27:625][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.07.03-05.49.27:705][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.07.03-05.49.27:711][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 2 classes and 0 folders.
+[2020.07.03-05.49.27:742][  0]LogSlate: Took 0.000356 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.07.03-05.49.27:745][  0]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.07.03-05.49.27:754][  0]LogSlate: Took 0.000278 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.07.03-05.49.27:853][  0]LogRenderer: Reallocating scene render targets to support 1036x432 Format 10 NumSamples 1 (Frame:1).
+[2020.07.03-05.49.28:022][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2020.07.03-05.49.28:022][  0]LogLoad: (Engine Initialization) Total time: 20.74 seconds
+[2020.07.03-05.49.28:022][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.07.03-05.49.28:073][  0]LogAssetRegistry: Asset discovery search completed in 6.6042 seconds
+[2020.07.03-05.49.28:081][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2020.07.03-05.49.28:082][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.07.03-05.49.28:134][  0]LogSlate: Took 0.000269 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.07.03-05.49.32:645][399]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.07.03-05.49.32:679][399]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Powerups/MI_PowerupRegen.MI_PowerupRegen
+[2020.07.03-05.49.33:190][399]LogRenderer: Reallocating scene render targets to support 1068x704 Format 10 NumSamples 1 (Frame:1).
+[2020.07.03-05.49.34:879][529]LogSlate: Window 'MI_PowerupRegen' being destroyed
+[2020.07.03-05.49.34:890][529]LogSlate: Window 'MI_PowerupRegen' being destroyed
+[2020.07.03-05.49.34:937][529]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.49.34:937][529]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.49.38:309][733]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.49.38:591][733]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 125 classes and 0 folders.
+[2020.07.03-05.49.39:882][733]LogSlate: Took 0.000314 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.07.03-05.49.39:985][734]LogSlate: Took 0.000258 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.07.03-05.51.29:090][896]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.51.29:136][896]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2020.07.03-05.51.29:197][896]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.51.29:274][896]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_RegenCAD34C01412821FA26034AA477914099.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.51.29:293][896]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.51.29:293][896]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.51.29:338][896]LogSlate: Took 0.006934 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.07.03-05.52.06:059][964]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.52.06:103][964]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2020.07.03-05.52.06:170][964]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.52.06:219][964]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen9ECE1C42488ED73897AB4BA8285DCBCA.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.52.06:235][964]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.52.06:235][964]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.52.12:390][480]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.52.12:430][480]LogUObjectHash: Compacting FUObjectHashTables data took   2.90ms
+[2020.07.03-05.52.12:497][480]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.52.12:549][480]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen6C72AC2840AC2069AE33C4B6FE5EB9E5.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.52.12:565][480]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.52.12:565][480]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.52.13:885][583]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.52.13:895][583]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.52.13:896][583]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.52.13:896][583]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.52.15:331][735]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-05.52.15:360][735]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.03-05.52.15:361][735]PIE: New page: PIE session: MyMap (4 Jul 2020, 1:52:15 am)
+[2020.07.03-05.52.15:364][735]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.07.03-05.52.15:366][735]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.07.03-05.52.15:366][735]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.52.15:372][735]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005934s)
+[2020.07.03-05.52.15:374][735]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-05.52.15:374][735]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276D1D75000), frame # 5735
+[2020.07.03-05.52.15:374][735]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276F8D3B100), frame # 5735
+[2020.07.03-05.52.15:375][735]LogPlayLevel: PIE: World Init took: (0.001978s)
+[2020.07.03-05.52.15:375][735]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MyMap.MyMap to /Game/Maps/UEDPIE_0_MyMap.MyMap (0.008442s)
+[2020.07.03-05.52.15:394][735]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2020.07.03-05.52.15:395][735]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-05.52.15:395][735]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-05.52.15:395][735]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-05.52.15:395][735]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-05.52.15:395][735]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-05.52.15:396][735]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-05.52.15:396][735]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-05.52.15:396][735]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-05.52.15:396][735]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-05.52.15:396][735]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-05.52.15:401][735]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-05.52.15:401][735]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-05.52.15:443][735]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-05.52.15:443][735]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-05.52.15:443][735]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-05.52.15:443][735]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-05.52.15:444][735]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-05.52.15:464][735]LogInit: FAudioDevice initialized.
+[2020.07.03-05.52.15:474][735]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.07.03-05.52.15:476][735]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-15.52.15
+[2020.07.03-05.52.15:477][735]LogWorld: Bringing up level for play took: 0.002191
+[2020.07.03-05.52.15:478][735]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2020.07.03-05.52.15:494][735]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
+[2020.07.03-05.52.15:497][735]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.07.03-05.52.15:497][735]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.07.03-05.52.15:497][735]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.07.03-05.52.15:498][735]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.07.03-05.52.15:498][735]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-05.52.15:498][735]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 17777
+[2020.07.03-05.52.15:500][735]PIE: Server logged in
+[2020.07.03-05.52.15:502][735]PIE: Play in editor total start time 0.142 seconds.
+[2020.07.03-05.52.18:437][ 24]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.52.18:943][ 81]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.52.18:943][ 81]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: TICKED
+[2020.07.03-05.52.18:943][ 81]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: EXPIRED
+[2020.07.03-05.52.26:586][961]LogTemp: Health Changed: 80.0
+[2020.07.03-05.52.26:586][961]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.26:831][989]LogTemp: Health Changed: 60.0
+[2020.07.03-05.52.26:831][989]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.27:079][ 18]LogTemp: Health Changed: 40.0
+[2020.07.03-05.52.27:080][ 18]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.27:327][ 47]LogTemp: Health Changed: 20.0
+[2020.07.03-05.52.27:327][ 47]LogTemp: Healh 20.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.27:578][ 77]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.27:579][ 77]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.27:579][ 77]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.52.27:579][ 77]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.52.27:827][105]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.27:827][105]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.28:079][134]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.28:079][134]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.28:325][163]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.28:326][163]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.28:575][192]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.28:575][192]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.28:830][222]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.28:830][222]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.29:074][250]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.29:075][250]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.29:328][280]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.29:328][280]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.29:580][310]LogTemp: Health Changed: 0.0
+[2020.07.03-05.52.29:580][310]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.52.48:513][567]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.52.49:017][626]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.52.49:017][626]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: TICKED
+[2020.07.03-05.52.49:017][626]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: EXPIRED
+[2020.07.03-05.52.51:779][953]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-05.52.51:779][953]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: PowerupActivate
+[2020.07.03-05.52.54:332][256]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.52.54:839][315]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.52.54:839][315]LogBlueprintUserMessages: [Powerup_Regen_C_2] Server: TICKED
+[2020.07.03-05.52.54:840][315]LogBlueprintUserMessages: [Powerup_Regen_C_2] Server: EXPIRED
+[2020.07.03-05.52.57:462][625]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-05.52.57:463][625]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_1] Server: PowerupActivate
+[2020.07.03-05.53.00:297][963]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.53.00:806][ 23]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.53.00:806][ 23]LogBlueprintUserMessages: [Powerup_Regen_C_3] Server: TICKED
+[2020.07.03-05.53.00:806][ 23]LogBlueprintUserMessages: [Powerup_Regen_C_3] Server: EXPIRED
+[2020.07.03-05.53.01:788][139]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: TICKED
+[2020.07.03-05.53.01:788][139]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: EXPIRED
+[2020.07.03-05.53.03:282][316]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-05.53.03:282][316]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_2] Server: PowerupActivate
+[2020.07.03-05.53.05:859][623]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.53.06:360][682]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.53.06:360][682]LogBlueprintUserMessages: [Powerup_Regen_C_4] Server: TICKED
+[2020.07.03-05.53.06:360][682]LogBlueprintUserMessages: [Powerup_Regen_C_4] Server: EXPIRED
+[2020.07.03-05.53.07:468][813]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_1] Server: TICKED
+[2020.07.03-05.53.07:469][813]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_1] Server: EXPIRED
+[2020.07.03-05.53.07:863][856]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.07.03-05.53.07:863][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.53.07:863][856]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.53.07:864][856]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.53.07:864][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.53.07:880][856]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2020.07.03-05.53.07:880][856]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2020.07.03-05.53.07:880][856]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2020.07.03-05.53.07:882][856]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.03-05.53.07:887][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.53.07:965][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.53.08:013][856]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000276F8D3B100), frame # 11856
+[2020.07.03-05.53.08:013][856]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000276D1D75000), frame # 11856
+[2020.07.03-05.53.08:024][856]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2020.07.03-05.53.08:157][857]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2020.07.03-05.53.10:020][ 48]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.53.10:031][ 48]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.53.11:875][214]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.53.17:150][538]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.53.17:159][538]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.53.17:160][538]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.53.17:160][538]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.53.18:190][597]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-05.53.22:179][855]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.53.22:188][855]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.53.22:212][855]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.53.22:212][855]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.53.23:306][929]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.53.30:938][467]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.53.30:947][467]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.53.30:981][467]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.53.30:981][467]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.54.42:456][938]Candidate modules for hot reload:
+[2020.07.03-05.54.42:456][938]  CoOpGame
+[2020.07.03-05.54.42:456][938]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoOpGame,2583 CoOpGameEditor Win64 Development -Project="C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/CoOpGame.uproject" "C:/UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/CoOpGame.uproject"  -IgnoreJunk]
+[2020.07.03-05.54.42:460][938]Warning: Starting HotReload took  0.1s.
+[2020.07.03-05.54.47:229][383]CompilerResultsLog: New page: Compilation - 4 Jul 2020, 1:54:47 am
+[2020.07.03-05.54.47:229][383]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\UnrealTutorialLooman\UnrealTutorialLooman).
+[2020.07.03-05.54.47:230][383]CompilerResultsLog: Building CoOpGameEditor...
+[2020.07.03-05.54.47:230][383]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.03-05.54.47:230][383]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:   [1/4] SPowerupAcotr.cpp
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:   [2/4] UE4Editor-CoOpGame-2583.lib
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:      Creating library C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame-2583.lib and object C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame-2583.exp
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:   [3/4] UE4Editor-CoOpGame-2583.dll
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:      Creating library C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame-2583.suppressed.lib and object C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\UE4Editor-CoOpGame-2583.suppressed.exp
+[2020.07.03-05.54.47:230][383]CompilerResultsLog:   [4/4] CoOpGameEditor.target
+[2020.07.03-05.54.47:230][383]CompilerResultsLog: Total time in Parallel executor: 3.13 seconds
+[2020.07.03-05.54.47:231][383]CompilerResultsLog: Total execution time: 4.62 seconds
+[2020.07.03-05.54.47:231][383]LogMainFrame: MainFrame: Module compiling took 4.783 seconds
+[2020.07.03-05.54.47:328][383]LogClass: HitscanTrace HotReload.
+[2020.07.03-05.54.47:345][383]LogContentBrowser: Native class hierarchy updated for 'CoOpGame' in 0.0006 seconds. Added 9 classes and 4 folders.
+[2020.07.03-05.54.47:352][383]Display: HotReload successful (18 functions remapped  1 scriptstructs remapped)
+[2020.07.03-05.54.47:531][383]LogContentBrowser: Native class hierarchy populated in 0.0154 seconds. Added 3436 classes and 825 folders.
+[2020.07.03-05.54.47:533][383]Display: HotReload took  5.1s.
+[2020.07.03-05.55.53:278][115]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.56.08:473][189]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.56.08:628][189]LogUObjectHash: Compacting FUObjectHashTables data took   5.16ms
+[2020.07.03-05.56.08:690][189]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.56.08:737][189]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_RegenAD4605C64020782F77C9E99588C0ECBF.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.56.08:754][189]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.56.08:755][189]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.56.09:832][273]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.56.09:841][273]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-05.56.09:872][273]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.56.09:872][273]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.56.10:680][360]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-05.56.10:708][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.03-05.56.10:709][360]PIE: New page: PIE session: MyMap (4 Jul 2020, 1:56:10 am)
+[2020.07.03-05.56.10:742][360]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.56.10:748][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006326s)
+[2020.07.03-05.56.10:750][360]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-05.56.10:750][360]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002770DEF4600), frame # 21360
+[2020.07.03-05.56.10:751][360]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276EB67F380), frame # 21360
+[2020.07.03-05.56.10:751][360]LogPlayLevel: PIE: World Init took: (0.002364s)
+[2020.07.03-05.56.10:751][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MyMap.MyMap to /Game/Maps/UEDPIE_0_MyMap.MyMap (0.009262s)
+[2020.07.03-05.56.10:806][360]LogUObjectHash: Compacting FUObjectHashTables data took   3.96ms
+[2020.07.03-05.56.10:809][360]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-05.56.10:809][360]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-05.56.10:810][360]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-05.56.10:810][360]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-05.56.10:810][360]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-05.56.10:810][360]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-05.56.10:810][360]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-05.56.10:810][360]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-05.56.10:811][360]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-05.56.10:811][360]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-05.56.10:816][360]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-05.56.10:816][360]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-05.56.10:871][360]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-05.56.10:872][360]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-05.56.10:872][360]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-05.56.10:872][360]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-05.56.10:873][360]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-05.56.10:894][360]LogInit: FAudioDevice initialized.
+[2020.07.03-05.56.10:908][360]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.07.03-05.56.10:910][360]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-15.56.10
+[2020.07.03-05.56.10:911][360]LogWorld: Bringing up level for play took: 0.002280
+[2020.07.03-05.56.10:911][360]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2020.07.03-05.56.10:917][360]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.07.03-05.56.10:917][360]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.07.03-05.56.10:917][360]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.07.03-05.56.10:917][360]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.07.03-05.56.10:917][360]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-05.56.10:918][360]LogNet: GameNetDriver IpNetDriver_1 IpNetDriver listening on port 17777
+[2020.07.03-05.56.10:920][360]PIE: Server logged in
+[2020.07.03-05.56.10:921][360]PIE: Play in editor total start time 0.215 seconds.
+[2020.07.03-05.56.14:022][717]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.56.14:022][717]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: PowerupActivate
+[2020.07.03-05.56.14:529][776]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.56.14:529][776]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: TICKED
+[2020.07.03-05.56.14:529][776]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: EXPIRED
+[2020.07.03-05.56.17:430][117]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-05.56.17:430][117]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: PowerupActivate
+[2020.07.03-05.56.19:850][401]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.56.19:851][401]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: PowerupActivate
+[2020.07.03-05.56.20:354][460]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.56.20:354][460]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: TICKED
+[2020.07.03-05.56.20:354][460]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: EXPIRED
+[2020.07.03-05.56.22:129][670]LogTemp: Health Changed: 80.0
+[2020.07.03-05.56.22:129][670]LogTemp: Healh 80.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.22:373][698]LogTemp: Health Changed: 60.0
+[2020.07.03-05.56.22:373][698]LogTemp: Healh 60.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.22:433][705]LogTemp: Health Changed: 80.0
+[2020.07.03-05.56.22:434][705]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.22:620][727]LogTemp: Health Changed: 40.0
+[2020.07.03-05.56.22:621][727]LogTemp: Healh 40.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.22:679][734]LogTemp: Health Changed: 60.0
+[2020.07.03-05.56.22:679][734]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.22:797][748]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.56.22:872][757]LogTemp: Health Changed: 20.0
+[2020.07.03-05.56.22:873][757]LogTemp: Healh 20.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.22:933][764]LogTemp: Health Changed: 40.0
+[2020.07.03-05.56.22:933][764]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.23:127][787]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:127][787]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.23:128][787]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.56.23:128][787]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.56.23:184][793]LogTemp: Health Changed: 20.0
+[2020.07.03-05.56.23:184][793]LogTemp: Healh 20.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.23:376][815]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:376][815]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.23:428][821]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:428][821]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.23:429][821]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.56.23:429][821]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.56.23:429][821]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:622][840]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:622][840]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.23:680][846]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:680][846]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.23:871][866]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:871][866]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.23:931][873]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.23:931][873]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.24:121][894]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:121][894]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.24:182][901]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:183][901]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.24:374][923]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:375][923]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.24:427][929]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:428][929]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.24:629][951]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:629][951]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.56.24:681][957]LogTemp: Health Changed: 0.0
+[2020.07.03-05.56.24:681][957]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.56.24:833][968]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.07.03-05.56.24:833][968]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.56.24:833][968]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.56.24:833][968]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.56.24:834][968]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.56.24:849][968]LogNet: World NetDriver shutdown IpNetDriver_1 [GameNetDriver]
+[2020.07.03-05.56.24:849][968]LogNet: DestroyNamedNetDriver IpNetDriver_1 [GameNetDriver]
+[2020.07.03-05.56.24:850][968]LogExit: GameNetDriver IpNetDriver_1 shut down
+[2020.07.03-05.56.24:852][968]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.03-05.56.24:855][968]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.56.24:925][968]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.56.24:926][968]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000276EB67F380), frame # 22968
+[2020.07.03-05.56.24:926][968]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002770DEF4600), frame # 22968
+[2020.07.03-05.56.24:929][968]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2020.07.03-05.56.25:065][969]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2020.07.03-05.56.26:300][ 89]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.56.26:310][ 89]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.56.30:349][427]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.56.35:380][755]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-05.56.55:793][184]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-05.56.55:845][184]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2020.07.03-05.56.55:901][184]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-05.56.55:965][184]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed6DB74634449E93E7388CA8AF8CB5FBB5.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-05.56.55:985][184]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-05.56.55:985][184]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-05.56.57:944][329]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.56.57:948][329]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.56.57:972][329]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.56.57:972][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.56.58:029][329]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.07.03-05.56.58:029][329]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.56.58:030][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.03:493][916]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-05.57.03:520][916]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.03-05.57.03:520][916]PIE: New page: PIE session: MyMap (4 Jul 2020, 1:57:03 am)
+[2020.07.03-05.57.03:521][916]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.57.03:528][916]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006016s)
+[2020.07.03-05.57.03:529][916]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-05.57.03:529][916]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000277260C7400), frame # 25916
+[2020.07.03-05.57.03:529][916]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276D1E96340), frame # 25916
+[2020.07.03-05.57.03:530][916]LogPlayLevel: PIE: World Init took: (0.001601s)
+[2020.07.03-05.57.03:530][916]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MyMap.MyMap to /Game/Maps/UEDPIE_0_MyMap.MyMap (0.008049s)
+[2020.07.03-05.57.03:552][916]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-05.57.03:555][916]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-05.57.03:555][916]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-05.57.03:556][916]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-05.57.03:556][916]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-05.57.03:560][916]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-05.57.03:561][916]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-05.57.03:606][916]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-05.57.03:606][916]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-05.57.03:606][916]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-05.57.03:606][916]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-05.57.03:607][916]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-05.57.03:632][916]LogInit: FAudioDevice initialized.
+[2020.07.03-05.57.03:646][916]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.07.03-05.57.03:648][916]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-15.57.03
+[2020.07.03-05.57.03:649][916]LogWorld: Bringing up level for play took: 0.002299
+[2020.07.03-05.57.03:650][916]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2020.07.03-05.57.03:655][916]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.07.03-05.57.03:655][916]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.07.03-05.57.03:655][916]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.07.03-05.57.03:655][916]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.07.03-05.57.03:656][916]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-05.57.03:656][916]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 17777
+[2020.07.03-05.57.03:658][916]PIE: Server logged in
+[2020.07.03-05.57.03:659][916]PIE: Play in editor total start time 0.139 seconds.
+[2020.07.03-05.57.03:660][916]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-05.57.03:661][916]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-05.57.03:661][916]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-05.57.03:661][916]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-05.57.03:663][916]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-05.57.03:666][916]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-05.57.03:666][916]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-05.57.03:704][916]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-05.57.03:704][916]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-05.57.03:704][916]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-05.57.03:704][916]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-05.57.03:705][916]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-05.57.03:725][916]LogInit: FAudioDevice initialized.
+[2020.07.03-05.57.03:755][916]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.57.03:756][916]LogNet: Browse: 127.0.0.1:17777//Game/Maps/MyMap
+[2020.07.03-05.57.03:757][916]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.07.03-05.57.03:757][916]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.07.03-05.57.03:759][916]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-05.57.03:761][916]LogNet: Game client on port 17777, rate 10000
+[2020.07.03-05.57.03:764][916]PIE: Client logged in
+[2020.07.03-05.57.03:767][916]PIE: Play in editor total start time 0.247 seconds.
+[2020.07.03-05.57.04:777][ 12]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52065
+[2020.07.03-05.57.04:779][ 12]LogHandshake: SendConnectChallenge. Timestamp: 1.291766, Cookie: 173023037066222242056035004201118073086178069121216194037082
+[2020.07.03-05.57.04:781][ 12]LogHandshake: SendChallengeResponse. Timestamp: 1.291766, Cookie: 173023037066222242056035004201118073086178069121216194037082
+[2020.07.03-05.57.04:790][ 13]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52065
+[2020.07.03-05.57.04:790][ 13]LogHandshake: SendChallengeAck. InCookie: 173023037066222242056035004201118073086178069121216194037082
+[2020.07.03-05.57.04:790][ 13]LogNet: Server accepting post-challenge connection from: 127.0.0.1:52065
+[2020.07.03-05.57.04:790][ 13]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-05.57.04:791][ 13]LogNet: NotifyAcceptedConnection: Name: MyMap, TimeStamp: 07/03/20 15:57:04, [UNetConnection] RemoteAddr: 127.0.0.1:52065, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-05.57.04:792][ 13]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:52065, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-05.57.04:794][ 13]LogNetVersion: CoOpGame 1.0.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4195730951)
+[2020.07.03-05.57.04:795][ 13]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: PendingNetDriver IpNetDriver_3, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-05.57.04:805][ 14]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_MyMap.MyMap: Accepted
+[2020.07.03-05.57.04:806][ 14]LogNet: Remote platform little endian=1
+[2020.07.03-05.57.04:806][ 14]LogNet: This platform little endian=1
+[2020.07.03-05.57.04:808][ 14]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2020.07.03-05.57.04:820][ 15]LogNet: Login request: ?Name=LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC userId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC platform: NULL
+[2020.07.03-05.57.04:823][ 15]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_MyMap, Game: /Game/Blueprints/BP_TestGameMode.BP_TestGameMode_C)
+[2020.07.03-05.57.04:824][ 15]LogLoad: LoadMap: 127.0.0.1:17777//Game/Maps/UEDPIE_0_MyMap?game=/Game/Blueprints/BP_TestGameMode.BP_TestGameMode_C
+[2020.07.03-05.57.04:824][ 15]LogWorld: BeginTearingDown for /Temp/Untitled_1
+[2020.07.03-05.57.04:825][ 15]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.57.04:825][ 15]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.04:847][ 15]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2020.07.03-05.57.04:857][ 15]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-05.57.04:857][ 15]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276B8FFE200), frame # 26015
+[2020.07.03-05.57.04:857][ 15]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000277240F0400), frame # 26015
+[2020.07.03-05.57.04:860][ 15]LogWorld: Bringing World /Game/Maps/UEDPIE_1_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-15.57.04
+[2020.07.03-05.57.04:860][ 15]LogWorld: Bringing up level for play took: 0.001639
+[2020.07.03-05.57.04:861][ 15]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.07.03-05.57.04:862][ 15]LogLoad: Took 0.038533 seconds to LoadMap(/Game/Maps/UEDPIE_0_MyMap)
+[2020.07.03-05.57.04:863][ 15]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.07.03-05.57.04:874][ 16]LogNet: Client netspeed is 10000
+[2020.07.03-05.57.04:874][ 16]LogNet: Join request: /Game/Maps/MyMap?Name=LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC?SplitscreenCount=1
+[2020.07.03-05.57.04:875][ 16]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-05.57.04:884][ 16]LogNet: Join succeeded: LAPTOP-JIFFIFRG-6A96
+[2020.07.03-05.57.05:123][ 33]LogTemp: Healh 100.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.05:164][ 36]LogTemp: Healh 100.0 of BP_TrackerBot_2
+[2020.07.03-05.57.05:218][ 40]LogTemp: Healh 100.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.05:513][ 63]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-05.57.05:636][ 72]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-05.57.08:173][249]LogBlueprintUserMessages: [TestPickup_2] Client 0: 
+[2020.07.03-05.57.08:185][250]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.57.08:186][250]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: PowerupActivate
+[2020.07.03-05.57.08:188][250]LogBlueprintUserMessages: [Powerup_Regen_C_0] Client 0: PowerupActivate
+[2020.07.03-05.57.08:700][285]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.57.08:701][285]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: TICKED
+[2020.07.03-05.57.08:701][285]LogBlueprintUserMessages: [Powerup_Regen_C_0] Server: EXPIRED
+[2020.07.03-05.57.13:397][611]LogTemp: Health Changed: 80.0
+[2020.07.03-05.57.13:397][611]LogTemp: Healh 80.0 of BP_TrackerBot_2
+[2020.07.03-05.57.13:410][612]LogTemp: Healh 80.0 of BP_TrackerBot_2
+[2020.07.03-05.57.13:581][623]LogTemp: Health Changed: 80.0
+[2020.07.03-05.57.13:581][623]LogTemp: Healh 80.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.13:582][623]LogTemp: Healh 80.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.13:641][627]LogTemp: Health Changed: 60.0
+[2020.07.03-05.57.13:641][627]LogTemp: Healh 60.0 of BP_TrackerBot_2
+[2020.07.03-05.57.13:657][628]LogTemp: Healh 60.0 of BP_TrackerBot_2
+[2020.07.03-05.57.13:776][636]LogTemp: Health Changed: 80.0
+[2020.07.03-05.57.13:776][636]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.13:777][636]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.13:817][639]LogTemp: Health Changed: 60.0
+[2020.07.03-05.57.13:817][639]LogTemp: Healh 60.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.13:833][640]LogTemp: Healh 60.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.13:890][644]LogTemp: Health Changed: 40.0
+[2020.07.03-05.57.13:891][644]LogTemp: Healh 40.0 of BP_TrackerBot_2
+[2020.07.03-05.57.13:908][645]LogTemp: Healh 40.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:010][652]LogTemp: Health Changed: 60.0
+[2020.07.03-05.57.14:011][652]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:012][652]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:068][656]LogTemp: Health Changed: 40.0
+[2020.07.03-05.57.14:068][656]LogTemp: Healh 40.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:070][656]LogTemp: Healh 40.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:070][656]LogBlueprintUserMessages: [TestPickup_2] Client 0: 
+[2020.07.03-05.57.14:083][657]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.57.14:083][657]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: PowerupActivate
+[2020.07.03-05.57.14:101][658]LogBlueprintUserMessages: [Powerup_Regen_C_1] Client 0: PowerupActivate
+[2020.07.03-05.57.14:131][660]LogTemp: Health Changed: 20.0
+[2020.07.03-05.57.14:132][660]LogTemp: Healh 20.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:133][660]LogTemp: Healh 20.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:261][669]LogTemp: Health Changed: 40.0
+[2020.07.03-05.57.14:261][669]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:263][669]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:322][673]LogTemp: Health Changed: 20.0
+[2020.07.03-05.57.14:322][673]LogTemp: Healh 20.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:323][673]LogTemp: Healh 20.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:395][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:396][678]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:396][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:397][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:397][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:397][678]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:398][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:398][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:398][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:398][678]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:398][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:398][678]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:399][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:399][678]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-05.57.14:399][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:399][678]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:399][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:399][678]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:399][678]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:400][678]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:401][678]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:402][678]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:418][679]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:513][685]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:513][685]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:580][689]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:580][689]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:596][690]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.57.14:596][690]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: TICKED
+[2020.07.03-05.57.14:596][690]LogBlueprintUserMessages: [Powerup_Regen_C_1] Server: EXPIRED
+[2020.07.03-05.57.14:634][692]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:634][692]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.14:769][700]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:769][700]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.14:816][703]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:816][703]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.14:893][708]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.14:894][708]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.15:018][716]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:018][716]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.15:078][720]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:078][720]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.15:138][724]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:138][724]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.15:273][733]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:274][733]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.15:321][736]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:321][736]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.15:385][740]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:385][740]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.15:520][749]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:520][749]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.15:578][752]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:579][752]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.15:640][756]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:640][756]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.15:773][764]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:774][764]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.15:824][767]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:824][767]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.15:888][771]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.15:888][771]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.16:016][779]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:017][779]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.16:078][783]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:078][783]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.16:140][787]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:140][787]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.16:266][795]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:266][795]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-05.57.16:327][799]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:327][799]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-05.57.16:390][803]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.16:390][803]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-05.57.20:700][160]LogBlueprintUserMessages: [TestPickup2] Client 0: 
+[2020.07.03-05.57.20:710][161]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-05.57.20:710][161]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: PowerupActivate
+[2020.07.03-05.57.20:713][161]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Client 0: PowerupActivate
+[2020.07.03-05.57.22:999][364]LogBlueprintUserMessages: [TestPickup_2] Client 0: 
+[2020.07.03-05.57.23:043][368]LogBlueprintUserMessages: [TestPickup_2] Server: 
+[2020.07.03-05.57.23:043][368]LogBlueprintUserMessages: [Powerup_Regen_C_2] Server: PowerupActivate
+[2020.07.03-05.57.23:057][369]LogBlueprintUserMessages: [Powerup_Regen_C_2] Client 0: PowerupActivate
+[2020.07.03-05.57.23:549][412]LogTemp: Health Changed: 20.0 (+20.0)
+[2020.07.03-05.57.23:549][412]LogBlueprintUserMessages: [Powerup_Regen_C_2] Server: TICKED
+[2020.07.03-05.57.23:549][412]LogBlueprintUserMessages: [Powerup_Regen_C_2] Server: EXPIRED
+[2020.07.03-05.57.24:997][536]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:086][543]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:194][550]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:300][557]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:730][587]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:824][593]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.25:917][599]LogBlueprintUserMessages: [BP_TargetDummy2] Server: 20.0
+[2020.07.03-05.57.26:831][661]LogTemp: Health Changed: 80.0
+[2020.07.03-05.57.26:922][668]LogTemp: Health Changed: 60.0
+[2020.07.03-05.57.27:023][676]LogTemp: Health Changed: 40.0
+[2020.07.03-05.57.27:119][684]LogTemp: Health Changed: 20.0
+[2020.07.03-05.57.27:218][692]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.27:328][701]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.29:674][892]LogTemp: Health Changed: 80.0
+[2020.07.03-05.57.29:763][899]LogTemp: Health Changed: 60.0
+[2020.07.03-05.57.29:881][907]LogTemp: Health Changed: 40.0
+[2020.07.03-05.57.29:979][913]LogTemp: Health Changed: 20.0
+[2020.07.03-05.57.30:068][920]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.30:068][920]LogBlueprintUserMessages: [BP_TargetDummy2] Server: radial DAMAGE
+[2020.07.03-05.57.30:069][920]LogTemp: Health Changed: 0.0
+[2020.07.03-05.57.30:156][926]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:258][934]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:362][942]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:458][949]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:562][957]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:660][964]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:722][969]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: TICKED
+[2020.07.03-05.57.30:722][969]LogScript: Warning: Accessed None trying to read property CallFunc_GetPlayerPawn_ReturnValue
+	Powerup_SuperSpeed_C /Game/Maps/UEDPIE_0_MyMap.MyMap:PersistentLevel.Powerup_SuperSpeed_C_0
+	Function /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed_C:ExecuteUbergraph_Powerup_SuperSpeed:0205
+[2020.07.03-05.57.30:723][969]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_GetPlayerPawn_ReturnValue". Blueprint:  Powerup_SuperSpeed Function:  Execute Ubergraph Powerup Super Speed Graph:  EventGraph Node:  Set MaxWalkSpeed
+[2020.07.03-05.57.30:723][969]LogScript: Warning: Accessed None trying to read property CallFunc_GetComponentByClass_ReturnValue
+	Powerup_SuperSpeed_C /Game/Maps/UEDPIE_0_MyMap.MyMap:PersistentLevel.Powerup_SuperSpeed_C_0
+	Function /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed_C:ExecuteUbergraph_Powerup_SuperSpeed:0240
+[2020.07.03-05.57.30:723][969]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_GetComponentByClass_ReturnValue". Blueprint:  Powerup_SuperSpeed Function:  Execute Ubergraph Powerup Super Speed Graph:  EventGraph Node:  Set MaxWalkSpeed
+[2020.07.03-05.57.30:724][969]LogScript: Warning: Accessed None trying to read property CallFunc_GetComponentByClass_ReturnValue
+	Powerup_SuperSpeed_C /Game/Maps/UEDPIE_0_MyMap.MyMap:PersistentLevel.Powerup_SuperSpeed_C_0
+	Function /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed_C:ExecuteUbergraph_Powerup_SuperSpeed:0298
+[2020.07.03-05.57.30:724][969]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_GetComponentByClass_ReturnValue". Blueprint:  Powerup_SuperSpeed Function:  Execute Ubergraph Powerup Super Speed Graph:  EventGraph Node:  Set MaxWalkSpeed
+[2020.07.03-05.57.30:724][969]LogScript: Warning: Attempted to assign to None
+	Powerup_SuperSpeed_C /Game/Maps/UEDPIE_0_MyMap.MyMap:PersistentLevel.Powerup_SuperSpeed_C_0
+	Function /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed_C:ExecuteUbergraph_Powerup_SuperSpeed:02AD
+[2020.07.03-05.57.30:724][969]PIE: Error: Blueprint Runtime Error: "Attempted to assign to None". Blueprint:  Powerup_SuperSpeed Function:  Execute Ubergraph Powerup Super Speed Graph:  EventGraph Node:  Set MaxWalkSpeed
+[2020.07.03-05.57.30:724][969]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: EXPIRED
+[2020.07.03-05.57.30:764][972]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:857][979]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.30:964][987]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:053][993]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:152][  1]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:256][  9]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:354][ 17]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:461][ 25]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:563][ 33]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:654][ 40]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:753][ 48]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:854][ 56]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.31:956][ 64]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:064][ 72]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:164][ 79]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:267][ 87]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:353][ 94]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:462][103]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:563][111]LogNet: Warning: UNetDriver::ProcessRemoteFunction: No owning connection for actor BP_Rifle_C_1. Function ServerFire will not be processed.
+[2020.07.03-05.57.32:652][115]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.57.32:652][115]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_MyMap
+[2020.07.03-05.57.32:653][115]LogSlate: Window 'CoOpGame Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.07.03-05.57.32:662][115]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.57.32:664][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.32:678][115]LogNet: World NetDriver shutdown IpNetDriver_3 [GameNetDriver]
+[2020.07.03-05.57.32:678][115]LogNet: DestroyNamedNetDriver IpNetDriver_3 [GameNetDriver]
+[2020.07.03-05.57.32:678][115]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_3, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC, Channels: 19, Time: 2020.07.03-05.57.32
+[2020.07.03-05.57.32:678][115]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_3, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC
+[2020.07.03-05.57.32:679][115]LogExit: GameNetDriver IpNetDriver_3 shut down
+[2020.07.03-05.57.32:681][115]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-05.57.32:681][115]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.07.03-05.57.32:682][115]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.57.32:682][115]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.57.32:683][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.32:695][115]LogNet: World NetDriver shutdown IpNetDriver_2 [GameNetDriver]
+[2020.07.03-05.57.32:695][115]LogNet: DestroyNamedNetDriver IpNetDriver_2 [GameNetDriver]
+[2020.07.03-05.57.32:695][115]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:52065, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC
+[2020.07.03-05.57.32:695][115]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:52065, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC, Channels: 19, Time: 2020.07.03-05.57.32
+[2020.07.03-05.57.32:695][115]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:52065, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-6A96793440E942B097BF8B972B7331BC
+[2020.07.03-05.57.32:696][115]LogExit: GameNetDriver IpNetDriver_2 shut down
+[2020.07.03-05.57.32:698][115]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.03-05.57.32:702][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.32:833][115]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-05.57.32:835][115]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000276D1E96340), frame # 28115
+[2020.07.03-05.57.32:835][115]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000277260C7400), frame # 28115
+[2020.07.03-05.57.32:836][115]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000277240F0400), frame # 28115
+[2020.07.03-05.57.32:836][115]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000276B8FFE200), frame # 28115
+[2020.07.03-05.57.32:839][115]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2020.07.03-05.57.32:990][116]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2020.07.03-05.57.32:990][116]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2020.07.03-05.57.41:873][ 67]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-05.57.46:106][329]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.57.46:115][329]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-05.57.46:116][329]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-05.57.46:116][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-05.57.47:197][439]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.57.47:202][439]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-05.57.50:764][504]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MyMap" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.07.03-05.57.50:795][504]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2020.07.03-05.57.50:885][504]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/MyMap8CCCFE464D13A618D9F9F3B1BF9465D0.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap.umap'
+[2020.07.03-05.57.50:959][504]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MyMap_BuiltData" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap_BuiltData.uasset" SILENT=true
+[2020.07.03-05.57.51:064][504]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/MyMap_BuiltData51FD5D5A4094B686115EB19BB4E3961F.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap_BuiltData.uasset'
+[2020.07.03-05.57.51:086][504]AssetCheck: New page: Asset Save: multiple assets
+[2020.07.03-05.57.51:086][504]LogContentValidation: Display: Validating World /Game/Maps/MyMap.MyMap
+[2020.07.03-05.57.51:086][504]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/MyMap_BuiltData.MyMap_BuiltData
+[2020.07.03-05.57.51:708][551]LogUObjectHash: Compacting FUObjectHashTables data took   2.86ms
+[2020.07.03-05.58.13:175][881]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.58.25:116][604]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.58.25:176][604]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2020.07.03-05.58.25:256][604]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.58.25:329][604]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen724D680F4215E89C2DB14C8463598E30.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.58.25:352][604]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.58.25:353][604]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-05.58.29:494][873]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-05.58.29:545][873]LogUObjectHash: Compacting FUObjectHashTables data took   3.11ms
+[2020.07.03-05.58.29:622][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-05.58.29:681][873]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen341185BB471E4D56ECEA3DB85C4FE3BF.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-05.58.29:701][873]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-05.58.29:701][873]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.01.20:337][873]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.01.20:394][873]LogUObjectHash: Compacting FUObjectHashTables data took   3.90ms
+[2020.07.03-06.01.22:186][985]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.01.22:195][985]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.01.22:196][985]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.01.22:197][985]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.01.43:685][112]LogUObjectHash: Compacting FUObjectHashTables data took   4.21ms
+[2020.07.03-06.01.46:599][381]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.01.53:664][803]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.01.53:725][803]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
+[2020.07.03-06.01.53:795][803]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.01.53:824][803]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBaseB889129B49BA6107F16E309FCFAD8C7A.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.01.53:846][803]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.01.53:846][803]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.02.52:276][125]LogSlate: Window 'Delete Variable' being destroyed
+[2020.07.03-06.03.10:325][252]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.03.10:413][252]LogUObjectHash: Compacting FUObjectHashTables data took   5.48ms
+[2020.07.03-06.03.10:473][252]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.03.10:536][252]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBaseF5641EA94C35FFB9C9648DBD33114DAE.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.03.10:557][252]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.03.10:557][252]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.03.22:140][ 87]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.03.22:194][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   3.94ms
+[2020.07.03-06.03.22:240][ 87]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.03.22:286][ 87]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBaseF60D6D0A4363521FA872A4A93A261A0A.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.03.22:303][ 87]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.03.22:303][ 87]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.03.24:005][232]LogSlate: Window 'BP_PowerupBase' being destroyed
+[2020.07.03-06.03.24:015][232]LogSlate: Window 'BP_PowerupBase' being destroyed
+[2020.07.03-06.03.24:042][232]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.03.24:042][232]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.03.31:977][333]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.03.47:147][134]LogBlueprint: Warning: Reparenting blueprint Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen from SPowerupAcotr to BP_PowerupBase_C...
+[2020.07.03-06.03.47:154][134]LogBlueprint: Warning: [Compiler Powerup_Regen] Found a component variable with a conflicting name (StaticMesh) - changed to StaticMesh_0.
+[2020.07.03-06.03.47:155][134]LogBlueprint: Warning: [Compiler Powerup_Regen] Found a component variable with a conflicting name (PointLight) - changed to PointLight_0.
+[2020.07.03-06.03.47:155][134]LogBlueprint: Warning: [Compiler Powerup_Regen] Found a component variable with a conflicting name (RotatingMovement) - changed to RotatingMovement_0.
+[2020.07.03-06.03.47:161][134]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.03.47:239][134]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2020.07.03-06.03.47:303][134]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-06.03.47:364][134]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen0D3CABFC4CEF91FE42D5D2878D512798.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-06.03.47:386][134]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-06.03.47:386][134]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.04.50:610][481]LogSlate: Window 'Color Picker' being destroyed
+[2020.07.03-06.05.03:406][855]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.05.03:505][855]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2020.07.03-06.05.03:561][855]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-06.05.03:617][855]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen2B3696D4415B36117C5272B4124256DD.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-06.05.03:637][855]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-06.05.03:637][855]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.05.08:189][153]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.05.08:244][153]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2020.07.03-06.05.08:296][153]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-06.05.08:360][153]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen98BF6E9F4122B31565D90FB3DCE8FCB5.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-06.05.08:379][153]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-06.05.08:380][153]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.05.13:534][504]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.05.13:586][504]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2020.07.03-06.06.17:775][ 61]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.06.17:838][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2020.07.03-06.06.25:712][391]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.06.25:772][391]LogUObjectHash: Compacting FUObjectHashTables data took   3.15ms
+[2020.07.03-06.06.26:921][449]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.06.26:931][449]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.06.26:966][449]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.06.26:966][449]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.06.30:823][737]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.06.37:623][201]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-06.06.37:674][201]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen9CA66E4A4C46E7F9C30BC5B0868AA107.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-06.06.37:691][201]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-06.06.37:691][201]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.06.39:236][312]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.06.39:244][312]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.06.39:255][312]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.06.39:255][312]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.06.40:772][422]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.06.48:842][956]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.07.03-06.06.54:379][356]LogBlueprint: Warning: Reparenting blueprint Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed from SPowerupAcotr to BP_PowerupBase_C...
+[2020.07.03-06.06.54:385][356]LogBlueprint: Warning: [Compiler Powerup_SuperSpeed] Found a component variable with a conflicting name (StaticMesh) - changed to StaticMesh_0.
+[2020.07.03-06.06.54:386][356]LogBlueprint: Warning: [Compiler Powerup_SuperSpeed] Found a component variable with a conflicting name (PointLight) - changed to PointLight_0.
+[2020.07.03-06.06.54:386][356]LogBlueprint: Warning: [Compiler Powerup_SuperSpeed] Found a component variable with a conflicting name (RotatingMovement) - changed to RotatingMovement_0.
+[2020.07.03-06.06.54:393][356]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.06.54:437][356]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2020.07.03-06.06.54:501][356]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.06.54:566][356]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed790696E44B308DF27C1497868DBEAD71.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.06.54:585][356]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.06.54:585][356]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.07.38:652][353]LogSlate: Window 'Color Picker' being destroyed
+[2020.07.03-06.07.55:679][369]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.07.55:685][369]LogBlueprint: Error: [Compiler Powerup_SuperSpeed] This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2020.07.03-06.07.55:735][369]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2020.07.03-06.08.15:620][890]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.08.15:663][890]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2020.07.03-06.08.15:709][890]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.08.15:763][890]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeedF44AD6D6476AA6FD0D1C2DB23792CBCA.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.08.15:783][890]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.08.15:784][890]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.08.53:284][850]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.08.53:328][850]LogUObjectHash: Compacting FUObjectHashTables data took   2.95ms
+[2020.07.03-06.08.53:373][850]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.08.53:420][850]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeedCDE1F8894F87FC9E8E021A85B9A31769.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.08.53:438][850]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.08.53:439][850]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.09.02:006][532]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.09.02:055][532]LogUObjectHash: Compacting FUObjectHashTables data took   2.86ms
+[2020.07.03-06.09.18:744][481]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.09.18:751][481]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.09.18:785][481]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.09.18:786][481]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.20:326][626]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-06.09.24:221][973]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.09.29:939][229]LogSlate: Window 'Color Picker' being destroyed
+[2020.07.03-06.09.31:228][293]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.09.31:279][293]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2020.07.03-06.09.31:339][293]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.09.31:407][293]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed12E4B5DC4E1CE0F2D8EAC7AF966D8C45.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.09.31:431][293]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.09.31:431][293]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.09.32:504][348]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.09.32:515][348]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.09.32:563][348]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.09.32:564][348]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.33:520][426]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-06.09.36:266][635]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2020.07.03-06.09.37:430][743]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MyMap" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.07.03-06.09.37:454][743]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2020.07.03-06.09.37:525][743]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/MyMap59A2AB85461225818CC25B99FD44A294.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap.umap'
+[2020.07.03-06.09.37:582][743]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 4
+SessionName : 
+Reason      : Map Saved
+
+Purging the undo buffer...
+
+[2020.07.03-06.09.37:586][743]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MyMap_BuiltData" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap_BuiltData.uasset" SILENT=true
+[2020.07.03-06.09.37:668][743]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/MyMap_BuiltData66270E3A475401ED30B69CB9EE2785E4.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Maps/MyMap_BuiltData.uasset'
+[2020.07.03-06.09.37:696][743]AssetCheck: New page: Asset Save: multiple assets
+[2020.07.03-06.09.37:696][743]LogContentValidation: Display: Validating World /Game/Maps/MyMap.MyMap
+[2020.07.03-06.09.37:696][743]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/MyMap_BuiltData.MyMap_BuiltData
+[2020.07.03-06.09.39:114][850]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2020.07.03-06.09.40:144][941]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.03-06.09.40:177][941]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.03-06.09.40:177][941]PIE: New page: PIE session: MyMap (4 Jul 2020, 2:09:40 am)
+[2020.07.03-06.09.40:177][941]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-06.09.40:186][941]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008707s)
+[2020.07.03-06.09.40:188][941]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-06.09.40:189][941]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027731569800), frame # 61941
+[2020.07.03-06.09.40:189][941]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000276CD25EFC0), frame # 61941
+[2020.07.03-06.09.40:189][941]LogPlayLevel: PIE: World Init took: (0.002436s)
+[2020.07.03-06.09.40:189][941]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MyMap.MyMap to /Game/Maps/UEDPIE_0_MyMap.MyMap (0.011798s)
+[2020.07.03-06.09.40:215][941]LogUObjectHash: Compacting FUObjectHashTables data took   2.78ms
+[2020.07.03-06.09.40:217][941]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-06.09.40:218][941]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-06.09.40:218][941]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-06.09.40:219][941]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-06.09.40:220][941]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-06.09.40:226][941]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-06.09.40:226][941]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-06.09.40:279][941]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-06.09.40:279][941]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-06.09.40:279][941]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-06.09.40:279][941]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-06.09.40:280][941]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-06.09.40:306][941]LogInit: FAudioDevice initialized.
+[2020.07.03-06.09.40:324][941]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.07.03-06.09.40:326][941]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-16.09.40
+[2020.07.03-06.09.40:327][941]LogWorld: Bringing up level for play took: 0.002627
+[2020.07.03-06.09.40:328][941]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2020.07.03-06.09.40:334][941]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.07.03-06.09.40:335][941]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.07.03-06.09.40:335][941]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.07.03-06.09.40:335][941]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.07.03-06.09.40:335][941]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-06.09.40:335][941]LogNet: GameNetDriver IpNetDriver_4 IpNetDriver listening on port 17777
+[2020.07.03-06.09.40:337][941]PIE: Server logged in
+[2020.07.03-06.09.40:339][941]PIE: Play in editor total start time 0.163 seconds.
+[2020.07.03-06.09.40:340][941]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.03-06.09.40:340][941]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.03-06.09.40:340][941]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.03-06.09.40:341][941]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.03-06.09.40:341][941]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.03-06.09.40:341][941]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.03-06.09.40:341][941]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.03-06.09.40:341][941]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.03-06.09.40:343][941]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.03-06.09.40:343][941]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.03-06.09.40:347][941]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.03-06.09.40:347][941]LogAudioMixer: Display: 1: FrontRight
+[2020.07.03-06.09.40:398][941]LogAudioMixer: Display: Using Audio Device Headphones (SOUNDPEATS TrueWings  Stereo)
+[2020.07.03-06.09.40:399][941]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.03-06.09.40:399][941]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.03-06.09.40:399][941]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.03-06.09.40:400][941]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.03-06.09.40:437][941]LogInit: FAudioDevice initialized.
+[2020.07.03-06.09.40:474][941]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-06.09.40:474][941]LogNet: Browse: 127.0.0.1:17777//Game/Maps/MyMap
+[2020.07.03-06.09.40:475][941]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.07.03-06.09.40:476][941]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.07.03-06.09.40:477][941]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-06.09.40:477][941]LogNet: Game client on port 17777, rate 10000
+[2020.07.03-06.09.40:480][941]PIE: Client logged in
+[2020.07.03-06.09.40:483][941]PIE: Play in editor total start time 0.307 seconds.
+[2020.07.03-06.09.41:493][ 17]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:50220
+[2020.07.03-06.09.41:494][ 17]LogHandshake: SendConnectChallenge. Timestamp: 1.357794, Cookie: 037075101052180000220106080058112184127052077178159149184066
+[2020.07.03-06.09.41:496][ 17]LogHandshake: SendChallengeResponse. Timestamp: 1.357794, Cookie: 037075101052180000220106080058112184127052077178159149184066
+[2020.07.03-06.09.41:504][ 18]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:50220
+[2020.07.03-06.09.41:504][ 18]LogHandshake: SendChallengeAck. InCookie: 037075101052180000220106080058112184127052077178159149184066
+[2020.07.03-06.09.41:505][ 18]LogNet: Server accepting post-challenge connection from: 127.0.0.1:50220
+[2020.07.03-06.09.41:505][ 18]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.07.03-06.09.41:505][ 18]LogNet: NotifyAcceptedConnection: Name: MyMap, TimeStamp: 07/03/20 16:09:41, [UNetConnection] RemoteAddr: 127.0.0.1:50220, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_4, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-06.09.41:505][ 18]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:50220, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_4, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-06.09.41:508][ 18]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_2, Driver: PendingNetDriver IpNetDriver_5, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.07.03-06.09.41:517][ 19]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_MyMap.MyMap: Accepted
+[2020.07.03-06.09.41:517][ 19]LogNet: Remote platform little endian=1
+[2020.07.03-06.09.41:517][ 19]LogNet: This platform little endian=1
+[2020.07.03-06.09.41:519][ 19]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2020.07.03-06.09.41:532][ 20]LogNet: Login request: ?Name=LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320 userId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320 platform: NULL
+[2020.07.03-06.09.41:535][ 20]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_MyMap, Game: /Game/Blueprints/BP_TestGameMode.BP_TestGameMode_C)
+[2020.07.03-06.09.41:536][ 20]LogLoad: LoadMap: 127.0.0.1:17777//Game/Maps/UEDPIE_0_MyMap?game=/Game/Blueprints/BP_TestGameMode.BP_TestGameMode_C
+[2020.07.03-06.09.41:536][ 20]LogWorld: BeginTearingDown for /Temp/Untitled_2
+[2020.07.03-06.09.41:536][ 20]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.09.41:537][ 20]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.41:559][ 20]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2020.07.03-06.09.41:568][ 20]LogAIModule: Creating AISystem for world MyMap
+[2020.07.03-06.09.41:568][ 20]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000276EB73A000), frame # 62020
+[2020.07.03-06.09.41:568][ 20]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002771A06B9C0), frame # 62020
+[2020.07.03-06.09.41:570][ 20]LogWorld: Bringing World /Game/Maps/UEDPIE_1_MyMap.MyMap up for play (max tick rate 0) at 2020.07.03-16.09.41
+[2020.07.03-06.09.41:571][ 20]LogWorld: Bringing up level for play took: 0.001661
+[2020.07.03-06.09.41:571][ 20]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.07.03-06.09.41:572][ 20]LogLoad: Took 0.035335 seconds to LoadMap(/Game/Maps/UEDPIE_0_MyMap)
+[2020.07.03-06.09.41:572][ 20]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.07.03-06.09.41:586][ 21]LogNet: Client netspeed is 10000
+[2020.07.03-06.09.41:586][ 21]LogNet: Join request: /Game/Maps/MyMap?Name=LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320?SplitscreenCount=1
+[2020.07.03-06.09.41:587][ 21]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-06.09.41:591][ 21]LogNet: Join succeeded: LAPTOP-JIFFIFRG-01D8
+[2020.07.03-06.09.41:883][ 39]LogTemp: Healh 100.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.41:968][ 45]LogTemp: Healh 100.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.42:012][ 48]LogTemp: Healh 100.0 of BP_TrackerBot_2
+[2020.07.03-06.09.42:443][ 75]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-06.09.42:489][ 78]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.07.03-06.09.45:090][235]LogBlueprintUserMessages: [TestPickup2] Client 0: 
+[2020.07.03-06.09.45:104][236]LogBlueprintUserMessages: [TestPickup2] Server: 
+[2020.07.03-06.09.45:104][236]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Server: PowerupActivate
+[2020.07.03-06.09.45:106][236]LogBlueprintUserMessages: [Powerup_SuperSpeed_C_0] Client 0: PowerupActivate
+[2020.07.03-06.09.50:408][557]LogTemp: Health Changed: 80.0
+[2020.07.03-06.09.50:409][557]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:410][557]LogTemp: Healh 80.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:508][563]LogTemp: Health Changed: 80.0
+[2020.07.03-06.09.50:509][563]LogTemp: Healh 80.0 of BP_TrackerBot_2
+[2020.07.03-06.09.50:509][563]LogTemp: Health Changed: 80.0
+[2020.07.03-06.09.50:509][563]LogTemp: Healh 80.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.50:511][563]LogTemp: Healh 80.0 of BP_TrackerBot_2
+[2020.07.03-06.09.50:530][564]LogTemp: Healh 80.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.50:657][571]LogTemp: Health Changed: 60.0
+[2020.07.03-06.09.50:658][571]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:676][572]LogTemp: Healh 60.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:743][576]LogTemp: Health Changed: 60.0
+[2020.07.03-06.09.50:743][576]LogTemp: Healh 60.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.50:744][576]LogTemp: Health Changed: 60.0
+[2020.07.03-06.09.50:744][576]LogTemp: Healh 60.0 of BP_TrackerBot_2
+[2020.07.03-06.09.50:745][576]LogTemp: Healh 60.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.50:760][577]LogTemp: Healh 60.0 of BP_TrackerBot_2
+[2020.07.03-06.09.50:893][585]LogTemp: Health Changed: 40.0
+[2020.07.03-06.09.50:893][585]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:894][585]LogTemp: Healh 40.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.50:993][591]LogTemp: Health Changed: 40.0
+[2020.07.03-06.09.50:994][591]LogTemp: Healh 40.0 of BP_TrackerBot_2
+[2020.07.03-06.09.50:994][591]LogTemp: Health Changed: 40.0
+[2020.07.03-06.09.50:994][591]LogTemp: Healh 40.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.50:995][591]LogTemp: Healh 40.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:010][592]LogTemp: Healh 40.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:143][600]LogTemp: Health Changed: 20.0
+[2020.07.03-06.09.51:143][600]LogTemp: Healh 20.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:161][601]LogTemp: Healh 20.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:243][606]LogTemp: Health Changed: 20.0
+[2020.07.03-06.09.51:243][606]LogTemp: Healh 20.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:243][606]LogTemp: Health Changed: 20.0
+[2020.07.03-06.09.51:243][606]LogTemp: Healh 20.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:244][606]LogTemp: Healh 20.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:259][607]LogTemp: Healh 20.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:393][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:393][615]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:394][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:394][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot3_5.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:394][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:395][615]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:395][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:395][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:395][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:396][615]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:396][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:396][615]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:396][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:397][615]PIE: Warning: Invalid Simulate Options: Body (BP_TrackerBot2_2.MeshComp TrackerBot) is set to simulate physics but Collision Enabled is incompatible
+[2020.07.03-06.09.51:397][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:397][615]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:397][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:397][615]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:397][615]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:398][615]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:399][615]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:416][616]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:417][616]LogTemp: Healh 0.0 of BP_TrackerBot3_5
+[2020.07.03-06.09.51:505][621]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:505][621]LogTemp: Healh 0.0 of BP_TrackerBot_2
+[2020.07.03-06.09.51:505][621]LogTemp: Health Changed: 0.0
+[2020.07.03-06.09.51:505][621]LogTemp: Healh 0.0 of BP_TrackerBot2_2
+[2020.07.03-06.09.51:614][623]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-06.09.51:614][623]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_MyMap
+[2020.07.03-06.09.51:615][623]LogSlate: Window 'CoOpGame Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.07.03-06.09.51:624][623]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.09.51:625][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.51:644][623]LogNet: World NetDriver shutdown IpNetDriver_5 [GameNetDriver]
+[2020.07.03-06.09.51:644][623]LogNet: DestroyNamedNetDriver IpNetDriver_5 [GameNetDriver]
+[2020.07.03-06.09.51:644][623]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_5, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320, Channels: 23, Time: 2020.07.03-06.09.51
+[2020.07.03-06.09.51:644][623]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_5, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320
+[2020.07.03-06.09.51:645][623]LogExit: GameNetDriver IpNetDriver_5 shut down
+[2020.07.03-06.09.51:647][623]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MyMap
+[2020.07.03-06.09.51:648][623]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.07.03-06.09.51:649][623]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-06.09.51:650][623]LogWorld: UWorld::CleanupWorld for MyMap, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.09.51:652][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.51:669][623]LogNet: World NetDriver shutdown IpNetDriver_4 [GameNetDriver]
+[2020.07.03-06.09.51:669][623]LogNet: DestroyNamedNetDriver IpNetDriver_4 [GameNetDriver]
+[2020.07.03-06.09.51:670][623]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:50220, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_4, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320
+[2020.07.03-06.09.51:670][623]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:50220, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_4, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320, Channels: 23, Time: 2020.07.03-06.09.51
+[2020.07.03-06.09.51:670][623]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:50220, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_4, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-JIFFIFRG-01D8CF6C43D040CDEC9264A807439320
+[2020.07.03-06.09.51:670][623]LogExit: GameNetDriver IpNetDriver_4 shut down
+[2020.07.03-06.09.51:673][623]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.03-06.09.51:681][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.09.51:706][623]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.03-06.09.51:848][623]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002771A06B9C0), frame # 62623
+[2020.07.03-06.09.51:849][623]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000276EB73A000), frame # 62623
+[2020.07.03-06.09.51:850][623]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000276CD25EFC0), frame # 62623
+[2020.07.03-06.09.51:850][623]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027731569800), frame # 62623
+[2020.07.03-06.09.51:853][623]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2020.07.03-06.09.52:021][624]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2020.07.03-06.09.52:021][624]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2020.07.03-06.09.53:411][748]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-06.09.53:421][748]LogSlate: Window 'Message Log' being destroyed
+[2020.07.03-06.10.05:404][905]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.11.31:364][545]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.11.37:662][  2]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.11.37:721][  2]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2020.07.03-06.11.37:773][  2]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.11.37:823][  2]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed6CFAA06D4DA3754C4CAFDF9A93DF6521.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.11.37:840][  2]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.11.37:840][  2]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.11.39:269][105]LogSlate: Window 'BP_PowerupBase' being destroyed
+[2020.07.03-06.11.39:275][105]LogSlate: Window 'BP_PowerupBase' being destroyed
+[2020.07.03-06.11.39:275][105]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.11.39:276][105]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.11.39:332][105]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.07.03-06.11.39:332][105]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.11.39:332][105]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.11.44:704][454]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.15.41:759][873]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.07.03-06.16.42:743][457]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.16.42:790][457]LogUObjectHash: Compacting FUObjectHashTables data took   3.22ms
+[2020.07.03-06.16.42:841][457]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.16.42:899][457]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeedDEC2E97D412F985E2DB0DDB7893CDEC0.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.16.42:917][457]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.16.42:917][457]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.16.44:986][625]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.16.44:995][625]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.16.44:995][625]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.16.44:996][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.16.47:481][802]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.16.57:836][626]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.16.57:893][626]LogUObjectHash: Compacting FUObjectHashTables data took   2.78ms
+[2020.07.03-06.16.57:939][626]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.16.57:993][626]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBaseA17C476749268FCF598D18BF918447FC.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.16.58:009][626]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.16.58:009][626]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.17.06:001][302]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.17.06:052][302]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2020.07.03-06.17.06:101][302]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.17.06:149][302]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBase37A0E8B246B04D347ED10289E8AD87BE.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.17.06:168][302]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.17.06:168][302]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.17.25:750][978]BlueprintLog: New page: Compile BP_PowerupBase
+[2020.07.03-06.17.25:805][978]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2020.07.03-06.17.25:857][978]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/BP_PowerupBase" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset" SILENT=true
+[2020.07.03-06.17.25:906][978]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/BP_PowerupBase1C5C375D4B8044EB9F07C980525E5A6D.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/BP_PowerupBase.uasset'
+[2020.07.03-06.17.25:922][978]AssetCheck: New page: Asset Save: BP_PowerupBase
+[2020.07.03-06.17.25:922][978]LogContentValidation: Display: Validating Blueprint /Game/Powerups/BP_PowerupBase.BP_PowerupBase
+[2020.07.03-06.17.52:303][971]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.20.27:434][756]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2020.07.03-06.20.27:436][756]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MyMap' took 0.032
+[2020.07.03-06.20.27:436][756]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Powerups/Powerup_SuperSpeed] ([1] browsable assets)...
+[2020.07.03-06.20.27:437][756]OBJ SavePackage: Finished generating thumbnails for package [/Game/Powerups/Powerup_SuperSpeed]
+[2020.07.03-06.20.27:484][756]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed_Auto17A866FCD4A4AD115E0F050BFF693EE7E.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Autosaves/Game/Powerups/Powerup_SuperSpeed_Auto1.uasset'
+[2020.07.03-06.20.27:486][756]LogFileHelpers: Auto-saving content packages took 0.050
+[2020.07.03-06.20.44:084][420]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.20.44:129][420]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.07.03-06.20.44:173][420]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.20.44:219][420]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed238522A04FDA5592ED0D87A4A39CEC5F.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.20.44:238][420]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.20.44:238][420]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.24.46:226][170]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.24.46:291][170]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed2301ECE7493C7C3F17A6CB8EE9242B57.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.24.46:312][170]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.24.46:312][170]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.25.43:502][988]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.25.43:511][988]LogSlate: Window 'Powerup_SuperSpeed' being destroyed
+[2020.07.03-06.25.43:547][988]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.25.43:547][988]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.25.43:634][988]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.07.03-06.25.43:634][988]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.25.43:634][988]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.25.44:992][ 67]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.25.57:376][734]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.07.03-06.27.54:065][878]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.27.54:127][878]LogUObjectHash: Compacting FUObjectHashTables data took   4.20ms
+[2020.07.03-06.27.54:184][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_Regen" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset" SILENT=true
+[2020.07.03-06.27.54:253][878]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_Regen0F60DC0B481BE3A355B9EEB1FB605904.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_Regen.uasset'
+[2020.07.03-06.27.54:279][878]AssetCheck: New page: Asset Save: Powerup_Regen
+[2020.07.03-06.27.54:279][878]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_Regen.Powerup_Regen
+[2020.07.03-06.28.29:078][282]BlueprintLog: New page: Compile Powerup_Regen
+[2020.07.03-06.28.29:131][282]LogUObjectHash: Compacting FUObjectHashTables data took   3.22ms
+[2020.07.03-06.28.30:028][339]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.28.30:036][339]LogSlate: Window 'Powerup_Regen' being destroyed
+[2020.07.03-06.28.30:037][339]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2020.07.03-06.28.30:037][339]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.03-06.28.30:991][393]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.28.45:631][203]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.07.03-06.29.32:139][377]LogEditorTransaction: Undo Move Node
+[2020.07.03-06.29.32:602][389]LogEditorTransaction: Undo Delete current selection
+[2020.07.03-06.29.33:310][438]LogEditorTransaction: Undo Move Node
+[2020.07.03-06.29.33:842][475]LogEditorTransaction: Undo Create Pin Link
+[2020.07.03-06.29.35:016][562]LogEditorTransaction: Undo Create Pin Link
+[2020.07.03-06.29.36:625][685]LogEditorTransaction: Undo Create Pin Link
+[2020.07.03-06.29.37:951][786]LogEditorTransaction: Undo Move Node
+[2020.07.03-06.29.55:593][125]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.29.55:643][125]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2020.07.03-06.29.55:688][125]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Powerups/Powerup_SuperSpeed" FILE="../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset" SILENT=true
+[2020.07.03-06.29.55:749][125]LogSavePackage: Moving '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Saved/Powerup_SuperSpeed6EC8B46F41646928366C13984264E78E.tmp' to '../../../../../../UnrealTutorialLooman/UnrealTutorialLooman/CoOpGame/Content/Powerups/Powerup_SuperSpeed.uasset'
+[2020.07.03-06.29.55:767][125]AssetCheck: New page: Asset Save: Powerup_SuperSpeed
+[2020.07.03-06.29.55:767][125]LogContentValidation: Display: Validating Blueprint /Game/Powerups/Powerup_SuperSpeed.Powerup_SuperSpeed
+[2020.07.03-06.30.15:289][670]BlueprintLog: New page: Compile Powerup_SuperSpeed
+[2020.07.03-06.30.15:334][670]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms

@@ -140,6 +140,7 @@ void ASTrackerBot::SelfDestruct()
 
 		SetLifeSpan(2.0f);
 	}
+
 }
 
 void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)

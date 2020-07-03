@@ -2,6 +2,7 @@
 
 
 #include "SPowerupAcotr.h"
+#include <Net/UnrealNetwork.h>
 
 // Sets default values
 ASPowerupAcotr::ASPowerupAcotr()
@@ -10,21 +11,14 @@ ASPowerupAcotr::ASPowerupAcotr()
 	PowerupInterval = 0.0f;
 	TotalNumOfTicks = 0;
 
+	SetReplicates(true);
 }
 
-// Called when the game starts or when spawned
-void ASPowerupAcotr::BeginPlay()
-{
-	Super::BeginPlay();
-	
 
-	
-	
-
-}
 
 void ASPowerupAcotr::OnTickPowerup()
 {
+	if (!HasAuthority()) return;
 
 	TicksProcessed++;
 
@@ -38,9 +32,21 @@ void ASPowerupAcotr::OnTickPowerup()
 	}
 }
 
-void ASPowerupAcotr::ActivatePowerup()
+void ASPowerupAcotr::OnRep_PowerupActive()
 {
-	OnActivated();
+	//set the new value
+		OnPowerupStateChanged(bPowerUpActive);
+	
+}
+
+void ASPowerupAcotr::ActivatePowerup(AActor* ActivateFor)
+{
+	if (!HasAuthority()) return;
+
+
+	OnActivated(ActivateFor);
+	bPowerUpActive = true;
+	OnRep_PowerupActive();
 
 	if (PowerupInterval > 0.0f)
 	{
@@ -55,6 +61,13 @@ void ASPowerupAcotr::ActivatePowerup()
 
 	}
 
+}
+
+void ASPowerupAcotr::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ASPowerupAcotr, bPowerUpActive);
 }
 
 

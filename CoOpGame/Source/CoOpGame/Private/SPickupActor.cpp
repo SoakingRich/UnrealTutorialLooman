@@ -24,6 +24,8 @@ ASPickupActor::ASPickupActor()
 
 	CooldownDuration = 10.0f;
 
+	SetReplicates(true);
+
 	
 
 	
@@ -35,11 +37,15 @@ void ASPickupActor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Respawn();
+	
+		Respawn();
+	
 }
 
 void ASPickupActor::Respawn()
 {
+	if (!HasAuthority()) return;
+
 	if (PowerUpClass == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("powerup class not set"), *GetName());
@@ -55,13 +61,15 @@ void ASPickupActor::NotifyActorBeginOverlap(AActor* OtherActor)
 {
 	Super::NotifyActorBeginOverlap(OtherActor);
 
+	if (!HasAuthority()) return;
+
 	ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
 	if (PlayerPawn)
 	{
 
 		if (PowerUpInstance)
 		{
-			PowerUpInstance->ActivatePowerup();
+			PowerUpInstance->ActivatePowerup(OtherActor);
 
 			PowerUpInstance = nullptr;
 
