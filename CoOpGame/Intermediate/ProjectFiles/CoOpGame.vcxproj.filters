@@ -109,9 +109,21 @@
     <ClInclude Include="..\..\Source\CoOpGame\Public\SGameMode.h">
       <Filter>Source\CoOpGame\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoOpGame\Public\SGameState.h">
+      <Filter>Source\CoOpGame\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoOpGame\Public\SPlayerState.h">
+      <Filter>Source\CoOpGame\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CoOpGame\Private\SGameMode.cpp">
+      <Filter>Source\CoOpGame\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoOpGame\Private\SGameState.cpp">
+      <Filter>Source\CoOpGame\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoOpGame\Private\SPlayerState.cpp">
       <Filter>Source\CoOpGame\Private</Filter>
     </ClCompile>
   </ItemGroup>

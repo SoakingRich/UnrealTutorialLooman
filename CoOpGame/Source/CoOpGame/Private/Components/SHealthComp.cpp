@@ -3,6 +3,7 @@
 
 #include "Components/SHealthComp.h"
 #include "Net/UnrealNetwork.h"
+#include "SGameMode.h"
 
 // Sets default values for this component's properties
 USHealthComp::USHealthComp()
@@ -11,7 +12,7 @@ USHealthComp::USHealthComp()
 	// off to improve performance if you don't need them.
 	
 	DefaultHealth = 100;
-
+	bIsDead = false;
 	SetIsReplicatedByDefault(true);
 	// ...
 }
@@ -39,7 +40,7 @@ void USHealthComp::BeginPlay()
 
 void USHealthComp::HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
-	if (Damage <= 0.0f)
+	if (Damage <= 0.0f || bIsDead)
 	{
 		return;
 	}
@@ -48,7 +49,20 @@ void USHealthComp::HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const
 
 	UE_LOG(LogTemp, Log, TEXT("Health Changed: %s"), *FString::SanitizeFloat(Health));
 
+	bIsDead = Health <= 0.0f;
+
 	OnHealthChanged.Broadcast(this, Health, Damage, DamageType, InstigatedBy, DamageCauser);
+
+	if (bIsDead)
+	{
+		ASGameMode* GM = Cast<ASGameMode>(GetWorld()->GetAuthGameMode());
+		if (GM)
+		{
+			GM->OnActorKilled.Broadcast(GetOwner(), DamageCauser, InstigatedBy);
+
+		}
+
+	}
 }
 
 void USHealthComp::OnRep_Health(float OldHealth)

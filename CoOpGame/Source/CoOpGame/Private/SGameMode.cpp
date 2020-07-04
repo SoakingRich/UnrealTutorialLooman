@@ -5,6 +5,8 @@
 #include "Engine/EngineTypes.h"
 #include "TimerManager.h"
 #include "Components/SHealthComp.h"
+#include "SGameState.h"
+#include "SPlayerState.h"
 
 
 ASGameMode::ASGameMode()
@@ -13,6 +15,10 @@ ASGameMode::ASGameMode()
 
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.TickInterval = 1.0f;
+
+	GameStateClass = ASGameState::StaticClass();
+	PlayerStateClass = ASPlayerState::StaticClass();
+
 }
 
 void ASGameMode::StartPlay()
@@ -28,6 +34,8 @@ void ASGameMode::Tick(float DeltaSeconds)
 	Super::Tick(DeltaSeconds);
 
 	CheckWaveState();
+
+	CheckAnyPlayerAlive();
 }
 
 void ASGameMode::StartWave()
@@ -40,6 +48,8 @@ void ASGameMode::StartWave()
 
 
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("NewWave"));
+
+	SetWaveState(EWaveState::WaveInProgress);
 
 }
 
@@ -60,6 +70,8 @@ void ASGameMode::SpawnBotTimerElapsed()
 void ASGameMode::StopWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
+
+	SetWaveState(EWaveState::WaitingToComplete);
 
 	//PrepareForNextWave();
 }
@@ -91,15 +103,58 @@ void ASGameMode::CheckWaveState()
 
 	if (!bIsAnyBotAlive)
 	{
+		SetWaveState(EWaveState::WaveComplete);
 		PrepareForNextWave();
 	}
 
+}
+
+void ASGameMode::CheckAnyPlayerAlive()
+{
+	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
+	{
+		APlayerController* PC = It->Get();
+		if (PC && PC->GetPawn())
+		{
+			APawn* MyPawn = PC->GetPawn();
+			USHealthComp* HealthComp = Cast<USHealthComp>(MyPawn->GetComponentByClass(USHealthComp::StaticClass()));
+			if (ensure(HealthComp) && HealthComp->GetHealth() > 0.0f)
+			{
+				return;
+			}
+		}
+	}
+
+	//no player alive
+	GameOver();
+
+
+}
+
+void ASGameMode::GameOver()
+{
+	StopWave();
+
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("GAME OVER"));
+
+	SetWaveState(EWaveState::GameOver);
+}
+
+void ASGameMode::SetWaveState(EWaveState NewState)
+{
+	ASGameState* GS = GetGameState<ASGameState>();
+	if (ensureAlways(GS))
+	{
+		GS->SetWaveState(NewState);
+	}
 }
 
 void ASGameMode::PrepareForNextWave()
 {
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_NextWaveStart, this, &ASGameMode::StartWave, 1.0f, false, 0.0f);
+
+	SetWaveState(EWaveState::WaitingToStart);
 }
 
 

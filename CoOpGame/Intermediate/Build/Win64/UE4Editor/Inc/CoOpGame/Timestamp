@@ -1,10 +1,12 @@
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\Components\SHealthComp.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SCharacter.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SExplosiveBarrel.h
-F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPickupActor.h
-F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
-F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\STrackerBot.h
-F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SWeapon.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SGameMode.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPickupActor.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SGameState.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SWeapon.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\STrackerBot.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPlayerState.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\CoOpGameGameModeBase.h
 F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\TestActor.h
