@@ -1,4 +1,4 @@
-C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
-C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
-C:\UnrealTutorialLooman\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SPowerupAcotr.generated.h
-C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Net/UnrealNetwork.h
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Development\CoOpGame\Definitions.CoOpGame.h
+F:\UnrealTutorialLooman\CoOpGame\Source\CoOpGame\Public\SPowerupAcotr.h
+F:\UnrealTutorialLooman\CoOpGame\Intermediate\Build\Win64\UE4Editor\Inc\CoOpGame\SPowerupAcotr.generated.h
+F:\UnrealEngine\UE_4.25\Engine\Source\Runtime\Engine\Public\Net/UnrealNetwork.h

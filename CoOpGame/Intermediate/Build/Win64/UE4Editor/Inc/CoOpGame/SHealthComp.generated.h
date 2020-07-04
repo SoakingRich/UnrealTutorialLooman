@@ -44,15 +44,15 @@ static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScr
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execHeal); \
-	DECLARE_FUNCTION(execOnRep_Health); \
-	DECLARE_FUNCTION(execHandleTakeAnyDamage);
+	DECLARE_FUNCTION(execHandleTakeAnyDamage); \
+	DECLARE_FUNCTION(execOnRep_Health);
 
 
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execHeal); \
-	DECLARE_FUNCTION(execOnRep_Health); \
-	DECLARE_FUNCTION(execHandleTakeAnyDamage);
+	DECLARE_FUNCTION(execHandleTakeAnyDamage); \
+	DECLARE_FUNCTION(execOnRep_Health);
 
 
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_INCLASS_NO_PURE_DECLS \
@@ -111,7 +111,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USHealthComp); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(USHealthComp)
 
 
-#define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_PRIVATE_PROPERTY_OFFSET
+#define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(USHealthComp, Health); } \
+	FORCEINLINE static uint32 __PPO__DefaultHealth() { return STRUCT_OFFSET(USHealthComp, DefaultHealth); }
+
+
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_12_PROLOG
 #define CoOpGame_Source_CoOpGame_Public_Components_SHealthComp_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

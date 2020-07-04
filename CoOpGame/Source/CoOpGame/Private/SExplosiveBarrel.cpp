@@ -63,7 +63,7 @@ void ASExplosiveBarrel::OnHealthChanged(USHealthComp* HealthCompo, float Health,
 	}
 
 
-	if (HealthComp->Health <= 0)
+	if (HealthComp->GetHealth() <= 0)
 	{
 		bExploded = true;
 		Explode();

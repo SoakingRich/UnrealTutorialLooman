@@ -22,25 +22,29 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	UFUNCTION()
+		void OnRep_Health(float OldHealth);
+
+	UPROPERTY(ReplicatedUsing = OnRep_Health, BlueprintReadOnly, Category = "HealthComponent")
+		float Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthComponent")
+		float DefaultHealth;
+
+	UFUNCTION()
+		void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 
 
 public:	
 
-	UPROPERTY(ReplicatedUsing= OnRep_Health, BlueprintReadOnly, Category = "HealthComponent")
-		float Health;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthComponent")
-	float DefaultHealth;
-
-	UFUNCTION()
-	void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
+	
+	float GetHealth() const;
 	
 	UPROPERTY(BlueprintAssignable, BlueprintReadWrite, Category = "Events")
 	FOnHealthChangedSignature OnHealthChanged;
 
-	UFUNCTION()
-	void OnRep_Health(float OldHealth);
+	
 		
 	UFUNCTION(BlueprintCallable, Category = "HealthComp")
 	void Heal(float HealAmount);
